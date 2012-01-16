@@ -11,6 +11,9 @@ gem 'haml', '~> 3.1.4'
 gem 'haml-rails', '~> 0.3.4'
 gem 'formtastic', '~> 2.0.2'
 
+gem 'nokogiri', '~> 1.5.0'
+gem 'ri_cal', '~> 0.8.8'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -45,6 +48,7 @@ group :development do
   gem 'guard-spork', '~> 0.4.1'
   gem 'guard-rspec', '~> 0.5.10'
   gem 'guard-pow', '~> 0.2.1'
+  gem 'heroku'
 end
 
 group :test do
