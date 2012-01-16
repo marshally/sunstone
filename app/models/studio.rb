@@ -1,5 +1,9 @@
 class Studio < ActiveRecord::Base
 
+  def to_param
+    slug
+  end
+
   def self.crawl_classes
     body = HTTParty.get schedule_url
 
