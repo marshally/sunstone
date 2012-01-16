@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @studio.name
+%p
+  %b Address:
+  = @studio.address
+%p
+  %b Lat:
+  = @studio.lat
+%p
+  %b Lng:
+  = @studio.lng
+%p
+  %b Photo url:
+  = @studio.photo_url
+%p
+  %b Studio url:
+  = @studio.studio_url
+
+= link_to 'Edit', edit_studio_path(@studio)
+\|
+= link_to 'Back', studios_path

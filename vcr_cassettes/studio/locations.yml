@@ -1,0 +1,677 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.sunstoneyoga.com/LocationsSchedules.aspx
+    body: ''
+    headers:
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-type:
+      - text/html; charset=utf-8
+      server:
+      - Microsoft-IIS/7.5
+      set-cookie:
+      - .ASPXANONYMOUS=SpWdBgALzQEkAAAAZTVkMTU3ZmQtYTQ0NC00M2IwLWFlZjMtZTU4ZDJlOTg3MDVk0;
+        expires=Mon, 26-Mar-2012 03:25:00 GMT; path=/; HttpOnly
+      - DotNetNukeAnonymous=41b02509-5999-4a2d-ad14-e64f6f88084e; expires=Mon, 16-Jan-2012
+        17:05:00 GMT; path=/; HttpOnly
+      - ASP.NET_SessionId=kfbudrk1ydyp115km1mzknuo; path=/; HttpOnly
+      - .ASPXANONYMOUS=SpWdBgALzQEkAAAAZTVkMTU3ZmQtYTQ0NC00M2IwLWFlZjMtZTU4ZDJlOTg3MDVk0;
+        expires=Mon, 26-Mar-2012 03:25:00 GMT; path=/; HttpOnly
+      - DotNetNukeAnonymous=41b02509-5999-4a2d-ad14-e64f6f88084e; expires=Mon, 16-Jan-2012
+        17:05:00 GMT; path=/; HttpOnly
+      - ASP.NET_SessionId=kfbudrk1ydyp115km1mzknuo; path=/; HttpOnly
+      - language=en-US; path=/; HttpOnly
+      x-aspnet-version:
+      - 4.0.30319
+      x-powered-by:
+      - ASP.NET
+      date:
+      - Mon, 16 Jan 2012 16:45:01 GMT
+      connection:
+      - close
+      content-length:
+      - '65094'
+    body: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html
+      \ xml:lang=\"en-US\" lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head
+      id=\"Head\"><LINK id=\"Template_2104\" rel=\"stylesheet\" type=\"text/css\"
+      href=\"/Portals/0/VivoGroups/2104/Templates/VG_Default/Template.css\"></LINK><meta
+      content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\" /><meta content=\"text/javascript\"
+      http-equiv=\"Content-Script-Type\" /><meta content=\"text/css\" http-equiv=\"Content-Style-Type\"
+      /><meta id=\"MetaDescription\" name=\"DESCRIPTION\" content=\"locations and
+      schedules for all Sunstone Yoga locations. Dallas, Houston, Austin, Irving,
+      Southlake, Rockwall, Flower Mound, Richardson\" /><meta id=\"MetaKeywords\"
+      name=\"KEYWORDS\" content=\"yoga, power, vinyasa, pilates,  hot, heat, alternative
+      medicine, natural healing, teacher training, naturopath, acupuncture, chiropractor,
+      bodyworker, massage therapy, programs, spiritual growth, homeopathy, herbs,
+      metaphysics, body, mind, soul,\r\nyoga, bikram, hot yoga, teacher training,
+      alternative medicine, natural healing, naturopath, acupuncture, chiropractor,
+      bodyworker, massage therapy, spiritual growth, homeopathy, herbs, metaphysics,
+      body, mind, soul\" /><meta id=\"MetaCopyright\" name=\"COPYRIGHT\" content=\"Copyright
+      2002-2012 by Sunstone Yoga LLC\" /><meta id=\"MetaAuthor\" name=\"AUTHOR\" content=\"Sunstone
+      Yoga, LLC\" /><meta name=\"RESOURCE-TYPE\" content=\"DOCUMENT\" /><meta name=\"DISTRIBUTION\"
+      content=\"GLOBAL\" /><meta id=\"MetaRobots\" name=\"ROBOTS\" content=\"INDEX,
+      FOLLOW\" /><meta name=\"REVISIT-AFTER\" content=\"1 DAYS\" /><meta name=\"RATING\"
+      content=\"GENERAL\" /><meta http-equiv=\"PAGE-ENTER\" content=\"RevealTrans(Duration=0,Transition=1)\"
+      /><style id=\"StylePlaceholder\" type=\"text/css\"></style><link href=\"/Portals/_default/default.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/DesktopModules/Announcements/module.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/DesktopModules/VivoGroups/module.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/1Sunstone-Orange/skin.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Containers/1Sunstone-Apple/container.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Containers/1Sunstone-Apple/Container-04.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/0/portal.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/admin/ControlPanel/module.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><link href=\"/Portals/_default/Skins/_default/WebControlSkin/Default/ComboBox.Default.css?cdv=177\"
+      type=\"text/css\" rel=\"stylesheet\"/><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?cdv=177\"
+      type=\"text/javascript\"></script><script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js?cdv=177\"
+      type=\"text/javascript\"></script><link id=\"dnnskin_net_client_theme_id\" rel=\"stylesheet\"
+      type=\"text/css\" href=\"/Portals/_default/Skins/1Sunstone-Orange/themes/White.css\"></link><link
+      id=\"ctl32\" rel=\"stylesheet\" type=\"text/css\" href=\"/Portals/_default/Skins/1Sunstone-Orange/themes/layout-medium.css\"></link><link
+      rel='SHORTCUT ICON' href='/Portals/0/favicon.ico' type='image/x-icon' /><title>\r\n\tLocations
+      & Schedules\r\n</title></head>\r\n<body id=\"Body\">\r\n    \r\n    <form method=\"post\"
+      action=\"/LocationsSchedules.aspx\" id=\"Form\" enctype=\"multipart/form-data\">\r\n<input
+      type=\"hidden\" name=\"StylesheetManager_TSSM\" id=\"StylesheetManager_TSSM\"
+      value=\"\" />\r\n<input type=\"hidden\" name=\"ScriptManager_TSM\" id=\"ScriptManager_TSM\"
+      value=\"\" />\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\"
+      value=\"/wEPDwUKMTkwNjA1NjgwNQ9kFgZmDxYCHgRUZXh0BXk8IURPQ1RZUEUgaHRtbCBQVUJMSUMgIi0vL1czQy8vRFREIFhIVE1MIDEuMCBUcmFuc2l0aW9uYWwvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvVFIveGh0bWwxL0RURC94aHRtbDEtdHJhbnNpdGlvbmFsLmR0ZCI+ZAIBD2QWDgIFDxYCHgdWaXNpYmxlaGQCBg8WAh4HY29udGVudAWHAWxvY2F0aW9ucyBhbmQgc2NoZWR1bGVzIGZvciBhbGwgU3Vuc3RvbmUgWW9nYSBsb2NhdGlvbnMuIERhbGxhcywgSG91c3RvbiwgQXVzdGluLCBJcnZpbmcsIFNvdXRobGFrZSwgUm9ja3dhbGwsIEZsb3dlciBNb3VuZCwgUmljaGFyZHNvbmQCBw8WAh8CBc4DeW9nYSwgcG93ZXIsIHZpbnlhc2EsIHBpbGF0ZXMsICBob3QsIGhlYXQsIGFsdGVybmF0aXZlIG1lZGljaW5lLCBuYXR1cmFsIGhlYWxpbmcsIHRlYWNoZXIgdHJhaW5pbmcsIG5hdHVyb3BhdGgsIGFjdXB1bmN0dXJlLCBjaGlyb3ByYWN0b3IsIGJvZHl3b3JrZXIsIG1hc3NhZ2UgdGhlcmFweSwgcHJvZ3JhbXMsIHNwaXJpdHVhbCBncm93dGgsIGhvbWVvcGF0aHksIGhlcmJzLCBtZXRhcGh5c2ljcywgYm9keSwgbWluZCwgc291bCwNCnlvZ2EsIGJpa3JhbSwgaG90IHlvZ2EsIHRlYWNoZXIgdHJhaW5pbmcsIGFsdGVybmF0aXZlIG1lZGljaW5lLCBuYXR1cmFsIGhlYWxpbmcsIG5hdHVyb3BhdGgsIGFjdXB1bmN0dXJlLCBjaGlyb3ByYWN0b3IsIGJvZHl3b3JrZXIsIG1hc3NhZ2UgdGhlcmFweSwgc3Bpcml0dWFsIGdyb3d0aCwgaG9tZW9wYXRoeSwgaGVyYnMsIG1ldGFwaHlzaWNzLCBib2R5LCBtaW5kLCBzb3VsZAIIDxYCHwIFKENvcHlyaWdodCAyMDAyLTIwMTIgYnkgU3Vuc3RvbmUgWW9nYSBMTENkAgkPFgQfAmQfAWhkAgoPFgIfAgUSU3Vuc3RvbmUgWW9nYSwgTExDZAINDxYCHwIFDUlOREVYLCBGT0xMT1dkAgIPZBYCAgEPZBYEZg9kFgJmDw8WAh8BaGQWBgICDxBkZBYBZmQCAw8PFgIfAWhkZAIFD2QWBgIBD2QWAgIBD2QWAmYPZBYCZg9kFg4CCw9kFgICAw8QZGQWAGQCDQ9kFgICAw8QZGQWAGQCEQ9kFgJmDxQrAAJkZBYEZg8PFgQeCENzc0NsYXNzBQlyY2JIZWFkZXIeBF8hU0ICAmRkAgEPDxYEHwMFCXJjYkZvb3Rlch8EAgJkZAIXDxBkZBYAZAIdDxBkZBYAZAIhDxBkZBYAZAIlDxBkZBYAZAIDD2QWBAIXD2QWBgIHDxBkZBYAZAILDxBkZBYAZAINDxBkZBYAZAIbD2QWBgIHDxBkZBYAZAIJDxBkZBYAZAINDxQrAAJkZBYEZg8PFgQfAwUJcmNiSGVhZGVyHwQCAmRkAgEPDxYEHwMFCXJjYkZvb3Rlch8EAgJkZAIFDw8WAh8BaGQWBAINDw8WAh8BaGRkAhEPZBYCZg8QZGQWAGQCCA9kFgJmD2QWLmYPZBYCZg8WAh8ABYACPHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0naHR0cHM6Ly9nYXRld2F5Ni53aG9zb24uY29tL2luY2x1ZGUuanM/ZG9tYWluPXd3dy5zdW5zdG9uZXlvZ2EuY29tJz48L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPgpzV09Vc2VyPSIiOwpzV09QYWdlPSIiOwpzV09FbWFpbD0iIjsKc1dPTmFtZT0iIjsKaWYodHlwZW9mIHNXT1RyYWNrUGFnZT09J2Z1bmN0aW9uJylzV09UcmFja1BhZ2UoKTsKPC9zY3JpcHQ+CmQCAQ9kFgJmDw8WCB8DBQR1c2VyHwAFCFJlZ2lzdGVyHgtOYXZpZ2F0ZVVybAVvaHR0cDovL3d3dy5zdW5zdG9uZXlvZ2EuY29tL3JlZ2lzdGVyLmFzcHg/cmV0dXJudXJsPWh0dHAlM2ElMmYlMmZ3d3cuc3Vuc3RvbmV5b2dhLmNvbSUyZmxvY2F0aW9uc3NjaGVkdWxlcy5hc3B4HwQCAhYCHgdvbmNsaWNrBbUBcmV0dXJuIGRubk1vZGFsLnNob3coJ2h0dHA6Ly93d3cuc3Vuc3RvbmV5b2dhLmNvbS9yZWdpc3Rlci5hc3B4P3JldHVybnVybD1odHRwJTNhJTJmJTJmd3d3LnN1bnN0b25leW9nYS5jb20lMmZsb2NhdGlvbnNzY2hlZHVsZXMuYXNweCZwb3BVcD10cnVlJywvKnNob3dSZXR1cm4qL3RydWUsNjAwLDk1MCx0cnVlLCcnKWQCAg9kFgJmDw8WCB8DBQVsb2dpbh8ABQVMb2dpbh8FBWJodHRwOi8vd3d3LnN1bnN0b25leW9nYS5jb20vSG9tZS9Mb2dpbi90YWJpZC81MzUvRGVmYXVsdC5hc3B4P3JldHVybnVybD0lMmZMb2NhdGlvbnNTY2hlZHVsZXMuYXNweB8EAgJkZAIDDxYCHgVjbGFzcwUTdGxwYW5lIEROTkVtcHR5UGFuZWQCBA9kFgJmDxYCHwcFK0Rubk1vZHVsZSBEbm5Nb2R1bGUtRE5OX0hUTUwgRG5uTW9kdWxlLTE4MDcWAgIBD2QWAmYPFgIfBwUMRE5OQWxpZ25sZWZ0FgICAQ8PZBYCHwcFHEROTk1vZHVsZUNvbnRlbnQgTW9kRE5OSFRNTEMWAgIBD2QWAgICDxYCHwFoZAIFDxYCHwcFE3RycGFuZSBETk5FbXB0eVBhbmVkAgYPZBYEZg9kFgYCAQ8QDxYCHwFoZGRkZAIDDxAPFgIfAWhkZGRkAgcPDxYCHwAFDTxzcGFuPjwvc3Bhbj5kZAICD2QWAgICDw8WAh8ABQ08c3Bhbj48L3NwYW4+ZGQCCA8WAh8BZxYCZg8WAh8HBStEbm5Nb2R1bGUgRG5uTW9kdWxlLUROTl9IVE1MIERubk1vZHVsZS0yMjUzFgICAQ9kFg4CAQ9kFgJmDw8WAh4HVG9vbFRpcAUITWluaW1pemVkFgJmDw8WBh4ISW1hZ2VVcmwFNC9Qb3J0YWxzL19kZWZhdWx0L0NvbnRhaW5lcnMvMVN1bnN0b25lLUFwcGxlL21pbi5naWYeDUFsdGVybmF0ZVRleHQFCE1pbmltaXplHwgFCE1pbmltaXplZGQCAg9kFgICAg8WAh8BaGQCAw8WAh8HBRpjb250YWluZXJwYW5lIEROTkFsaWdubGVmdBYCAgIPD2QWAh8HBRxETk5Nb2R1bGVDb250ZW50IE1vZEROTkhUTUxDZAIED2QWAmYPDxYCHwFoZGQCBQ9kFgJmDw8WAh8BaGRkAgYPZBYCZg8PFgIfAWhkZAIHD2QWAmYPDxYCHwFoZGQCCg9kFghmDxYCHwAFHjxkaXYgY2xhc3M9Imxhbmd1YWdlLW9iamVjdCIgPmQCAg8QDxYCHwFoZGQWAGQCBA8WAh8BaGQCBg8WAh8ABQY8L2Rpdj5kAgwPFgIfAWcWBmYPFgIfBwU0RG5uTW9kdWxlIERubk1vZHVsZS1ETk5fQW5ub3VuY2VtZW50cyBEbm5Nb2R1bGUtMTc3OBYCAgEPZBYOAgEPZBYCZg8PFgIfCAUITWF4aW1pemVkFgJmDw8WBh8JBTQvUG9ydGFscy9fZGVmYXVsdC9Db250YWluZXJzLzFTdW5zdG9uZS1BcHBsZS9tYXguZ2lmHwoFCE1heGltaXplHwgFCE1heGltaXplZGQCAg9kFgICAg8WAh8BaGQCAw8WAh8HBRpjb250YWluZXJwYW5lIEROTkFsaWdubGVmdBYCAgIPDxYCHwFoZBYCAgEPZBYEZg8WAh8BaBYCAgMPEGRkFgBkAgEPFgIfAAXGBjx0YWJsZSBjbGFzcz0iRE5OX0FOTl9EZXNpZ25UYWJsZSIgY2VsbHNwYWNpbmc9IjAiIHN1bW1hcnk9IkFubm91bmNlbWVudHMgRGVzaWduIFRhYmxlIiBib3JkZXI9IjAiIHN0eWxlPSJib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7Ij48dHI+PHRkPjx0YWJsZT48dHI+PHRkPjwvdGQ+PHRkIHZhbGlnbj0idG9wIj48c3BhbiBjbGFzcz0iU3Vuc3RvbmVSZWRCb2xkMTQiPkJ1eSBHaWZ0IENhcmRzIE9ubGluZSE8L3NwYW4+PGRpdiBjbGFzcz0iTm9ybWFsIEROTl9BTk5fRGVzY3JpcHRpb24iPjxwPjxhIHRhcmdldD0iX2JsYW5rIiBocmVmPSJodHRwOi8vd3d3LnN1bnN0b25leW9nYS5jb20vU3RvcmUvdGFiaWQvMzA2L0xpc3QvMS9DYXRlZ29yeUlELzI0L0xldmVsL2EvUHJvZHVjdElELzExODcvRGVmYXVsdC5hc3B4Ij48aW1nIGFsdD0iIiBhbGlnbj0ibGVmdCIgd2lkdGg9IjMwNCIgaGVpZ2h0PSIyNTAiIHNyYz0iL1BvcnRhbHMvMC9JbWFnZXMvZ2lmdGNhcmRfMS5wbmciIHN0eWxlPSJmbG9hdDogbGVmdDtib3JkZXItd2lkdGg6IDBweDtib3JkZXItc3R5bGU6IHNvbGlkOyIgLz48L2E+PC9wPiZuYnNwOzxhIGhyZWY9Ii9MaW5rQ2xpY2suYXNweD9saW5rPWh0dHAlM2ElMmYlMmZ3d3cuc3Vuc3RvbmV5b2dhLmNvbSUyZlN0b3JlJTJmdGFiaWQlMmYzMDYlMmZMaXN0JTJmMSUyZkNhdGVnb3J5SUQlMmYyNCUyZkxldmVsJTJmYSUyZlByb2R1Y3RJRCUyZjExODclMmZEZWZhdWx0LmFzcHgmYW1wO3RhYmlkPTYzJmFtcDttaWQ9MTc3OCIgdGFyZ2V0PSJfbmV3Ij5yZWFkIG1vcmUgLi4uPC9hPjwvZGl2Pjxicj48L3RkPjwvdHI+PC90YWJsZT48L3RkPjwvdHI+PC90YWJsZT5kAgQPZBYCZg8PFgIfAWhkZAIFD2QWAmYPDxYCHwFoZGQCBg9kFgJmDw8WAh8BaGRkAgcPZBYCZg8PFgIfAWhkZAIBDxYCHwcFK0Rubk1vZHVsZSBEbm5Nb2R1bGUtRE5OX0hUTUwgRG5uTW9kdWxlLTI2MjAWAgIBD2QWDgIBD2QWAmYPDxYCHwgFCE1pbmltaXplZBYCZg8PFgYfCQU0L1BvcnRhbHMvX2RlZmF1bHQvQ29udGFpbmVycy8xU3Vuc3RvbmUtQXBwbGUvbWluLmdpZh8KBQhNaW5pbWl6ZR8IBQhNaW5pbWl6ZWRkAgIPZBYCAgIPFgIfAWhkAgMPFgIfBwUaY29udGFpbmVycGFuZSBETk5BbGlnbmxlZnQWAgICDw9kFgIfBwUcRE5OTW9kdWxlQ29udGVudCBNb2RETk5IVE1MQ2QCBA9kFgJmDw8WAh8BaGRkAgUPZBYCZg8PFgIfAWhkZAIGD2QWAmYPDxYCHwFoZGQCBw9kFgJmDw8WAh8BaGRkAgIPFgIfBwUtRG5uTW9kdWxlIERubk1vZHVsZS1WaXZvR3JvdXBzIERubk1vZHVsZS0yMTA0FgICAQ9kFgJmDxYCHwcFDEROTkFsaWdubGVmdBYCAgEPD2QWAh8HBR9ETk5Nb2R1bGVDb250ZW50IE1vZFZpdm9Hcm91cHNDFgICAQ8PFgQeDFRvdGFsUmVjb3JkcwINHgxJc0RhdGFMb2FkZWRnZBYEAgIPZBYCZg9kFgICAw9kFgQCAg8WAh4LXyFJdGVtQ291bnRmZAIFDzwrAAkBAA8WBB4IRGF0YUtleXMWAB8NAg1kZAIIDzwrAAkAZAINDxYCHwcFInRvcGxlZnRwYW5lIGZsb2F0bGVmdCBETk5FbXB0eVBhbmVkAg4PFgIfBwUkdG9wcmlnaHRwYW5lIGZsb2F0cmlnaHQgRE5ORW1wdHlQYW5lZAIPDxYCHwcFFUxlZnRQYW5lIEROTkVtcHR5UGFuZWQCEA8WAh8HBQxETk5FbXB0eVBhbmVkAhEPFgIfBwUXbWlkZGxlbGVmdCBETk5FbXB0eVBhbmVkAhIPFgIfBwUYbWlkZGxlcmlnaHQgRE5ORW1wdHlQYW5lZAITDxYCHwcFDEROTkVtcHR5UGFuZWQCFA8WAh8HBRZSaWdodFBhbmUgRE5ORW1wdHlQYW5lZAIVDxYCHwcFFWJveGFwYW5lIEROTkVtcHR5UGFuZWQCFg8WAh8HBRVib3hicGFuZSBETk5FbXB0eVBhbmVkAhcPFgIfBwUVYm94Y3BhbmUgRE5ORW1wdHlQYW5lZAIYDxYCHwcFFWJveGRwYW5lIEROTkVtcHR5UGFuZWQCGQ8WAh8HBQxETk5FbXB0eVBhbmVkGAMFGlJpYmJvbkJhciRFZGl0UGFnZSRTa2luTHN0DxQrAAJlZWQFFlJpYmJvbkJhciRBZGRNb2QkY3RsMDIPFCsAAmVlZAUoZG5uJGN0cjIxMDQkVmlld1Zpdm9Hcm91cHMkTWFpbk11bHRpVmlldw8PZGZka6PfmpueHOLn6K2VB4rGiw8mfmQ=\"
+      />\r\n\r\n\r\n<script src=\"/WebResource.axd?d=x5iV_4snuHyDGd7SnEnlDpuDuNLwZBfRyd8PfhpOlC52sC-sefanPoIOa0ZxoBgFHj-giciTlhXB9ozZ6GoAKLc3v87YqGaxuRjrhAEe59HMOh8Ggv3rpNTgDraOxWR7pjv7aA2&amp;t=634601168605857173\"
+      type=\"text/javascript\"></script>\r\n<script src=\"/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a1f68db6e-ab92-4c56-8744-13e09bf43565%3aea597d4b\"
+      type=\"text/javascript\"></script>\r\n<input type=\"hidden\" name=\"__EVENTVALIDATION\"
+      id=\"__EVENTVALIDATION\" value=\"/wEWCALa2/rGBALDqsLUAgLs1ZiABALuu52SBgLm2/3MBQLs0bwcAv7k8bICAtH1idgO6hqKDlg1ltJ8G+ZyynYySSA2YZM=\"
+      />\r\n        <script src=\"/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=177\"
+      type=\"text/javascript\"></script><script src=\"/js/dnn.jquery.js?cdv=177\"
+      type=\"text/javascript\"></script><script src=\"/Resources/ControlPanel/ControlPanel.debug.js?cdv=177\"
+      type=\"text/javascript\"></script><script src=\"/js/dnncore.js?cdv=177\" type=\"text/javascript\"></script><script
+      src=\"/js/dnn.modalpopup.js?cdv=177\" type=\"text/javascript\"></script>\r\n
+      \       \r\n        \r\n\r\n<script src=\"/Portals/_default/Skins/1Sunstone-Orange/js/pngfix.js\"
+      type=\"text/javascript\"></script>\r\n<div id=\"body_middle\">\r\n\t<div id=\"dnntop\"
+      class=\"dnnwrapper\">\r\n\t\t\r\n\t\t<div class=\"account\"><div class=\"acl\"><span
+      class=\"floatleft\"><script type='text/javascript' src='https://gateway6.whoson.com/include.js?domain=www.sunstoneyoga.com'></script>\n<script
+      type='text/javascript'>\nsWOUser=\"\";\nsWOPage=\"\";\nsWOEmail=\"\";\nsWOName=\"\";\nif(typeof
+      sWOTrackPage=='function')sWOTrackPage();\n</script>\n</span><span class=\"floatleft\"><a
+      href=\"/\" class=\"index\">Home</a>&bull;\r\n\t  <a id=\"dnn_dnnUSER_registerLink\"
+      class=\"user\" onclick=\"return dnnModal.show(&#39;http://www.sunstoneyoga.com/register.aspx?returnurl=http%3a%2f%2fwww.sunstoneyoga.com%2flocationsschedules.aspx&amp;popUp=true&#39;,/*showReturn*/true,600,950,true,&#39;&#39;)\"
+      href=\"http://www.sunstoneyoga.com/register.aspx?returnurl=http%3a%2f%2fwww.sunstoneyoga.com%2flocationsschedules.aspx\">Register</a>&bull;<a
+      id=\"dnn_dnnLOGIN_loginLink\" class=\"login\" href=\"http://www.sunstoneyoga.com/Home/Login/tabid/535/Default.aspx?returnurl=%2fLocationsSchedules.aspx\">Login</a></span><a
+      id=\"themes\" onclick=\"showClassList()\" title=\"Page Options\" class=\"options\"
+      href=\"#\">Options</a></div></div>\r\n\t\t<table width=\"100%\" border=\"0\"
+      cellspacing=\"0\" cellpadding=\"0\" class=\"toppanes\">\r\n\t\t\t<tr>\r\n            \t\r\n
+      \               <td id=\"dnn_TCPane\" valign=\"top\" class=\"tcpane\"><div class=\"DnnModule
+      DnnModule-DNN_HTML DnnModule-1807\"><a name=\"1807\"></a><div id=\"dnn_ctr1807_ContentPane\"
+      class=\"DNNAlignleft\"><!-- Start_Module_1807 --><div id=\"dnn_ctr1807_ModuleContent\"
+      class=\"DNNModuleContent ModDNNHTMLC\">\r\n\t<div id=\"dnn_ctr1807_HtmlModule_lblContent\"
+      class=\"Normal\">\r\n\t\t<p style=\"text-align: center;\"><a href=\"http://www.sunstoneyoga.com/About/Sunstone2189.aspx\"><img
+      border=\"0\" alt=\"Sunstone 2 1/2 Program\" src=\"/portals/0/Images/S2H_Animation.gif\"
+      /></a></p>\r\n\t</div>\r\n\r\n</div><!-- End_Module_1807 --></div>\r\n</div></td>\r\n\r\n
+      \               \r\n\t\t\t</tr>\r\n\t\t</table>\r\n\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n<div
+      class=\"menu5 dnnwrapper\">\t\t<div class=\"searchbox\"><span id=\"dnn_dnnSEARCH_ClassicSearch\">\r\n
+      \ \r\n  \r\n  <input name=\"dnn$dnnSEARCH$txtSearch\" type=\"text\" maxlength=\"255\"
+      size=\"20\" id=\"dnn_dnnSEARCH_txtSearch\" class=\"NormalTextBox\" onkeydown=\"return
+      __dnn_KeyDown(&#39;13&#39;, &#39;javascript:__doPostBack(%27dnn$dnnSEARCH$cmdSearch%27,%27%27)&#39;,
+      event);\" />&nbsp;\r\n  <a id=\"dnn_dnnSEARCH_cmdSearch\" class=\"SkinObject\"
+      href=\"javascript:__doPostBack(&#39;dnn$dnnSEARCH$cmdSearch&#39;,&#39;&#39;)\"><span></span></a>\r\n</span>\r\n\r\n\r\n</div>\r\n<a
+      class=\"indexlink\" href=\"/\"><!----></a><div id=\"cssmenu0\" class=\"cssmenu\"><ul
+      class=\"Horizontal \"><li id =\"root0\" class=\"first downmenu\"><a href=\"http://www.sunstoneyoga.com/Home.aspx\"
+      ><span>Home<img border=\"0\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/action.gif\"
+      class=\"downarrow\" alt=\"Home\"/></span></a></li><li id =\"root2\" class=\"current\"><a
+      href=\"http://www.sunstoneyoga.com/LocationsSchedules.aspx\"  tabindex=\"1\"><span>Locations
+      & Schedules</span></a></li><li id =\"root3\" class=\"item downmenu\"><a href=\"http://www.sunstoneyoga.com/ProductsServices.aspx\"
+      \ tabindex=\"1\"><span>Products & Services<img border=\"0\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/action.gif\"
+      class=\"downarrow\" alt=\"Products & Services\"/></span></a><div class=\"slide\"><ul
+      class=\"H Group Level0\"><li class=\"first\"><a href=\"http://www.sunstoneyoga.com/ProductsServices/YogaClasses.aspx\"
+      \ tabindex=\"1\"><span>Yoga Classes</span></a></li><li><a href=\"http://www.sunstoneyoga.com/ProductsServices/Workshops.aspx\"
+      \ tabindex=\"1\"><span>Workshops</span></a></li><li class=\"item downmenu\"><a
+      href=\"http://www.sunstoneyoga.com/ProductsServices/TeacherTraining.aspx\"  tabindex=\"1\"><span>Teacher
+      Training<img border=\"0\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/action_right.gif\"
+      class=\"rightarrow\" alt=\"Teacher Training\"/></span></a><div class=\"slide\"><ul
+      class=\"H Group Level1\"><li><a href=\"http://www.sunstoneyoga.com/ProductsServices/TeacherTraining/Housing.aspx\"
+      \ tabindex=\"1\"><span>Housing</span></a></li></ul></div></li><li class=\"item
+      downmenu\"><a href=\"http://www.sunstoneyoga.com/ProductsServices/Franchising.aspx\"
+      \ tabindex=\"1\"><span>Franchising<img border=\"0\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/action_right.gif\"
+      class=\"rightarrow\" alt=\"Franchising\"/></span></a><div class=\"slide\"><ul
+      class=\"H Group Level1\"><li class=\"first\"><a href=\"http://www.sunstoneyoga.com/ProductsServices/Franchising/TheSunstoneAdvantage.aspx\"
+      \ tabindex=\"1\"><span>The Sunstone Advantage</span></a></li><li><a href=\"http://www.sunstoneyoga.com/ProductsServices/Franchising/TheCompetitiveEdge.aspx\"
+      \ tabindex=\"1\"><span>The Competitive Edge</span></a></li><li><a href=\"http://www.sunstoneyoga.com/ProductsServices/Franchising/TheOpportunity.aspx\"
+      \ tabindex=\"1\"><span>The Opportunity</span></a></li><li><a href=\"http://www.sunstoneyoga.com/ProductsServices/Franchising/WhyFranchise.aspx\"
+      \ tabindex=\"1\"><span>Why Franchise?</span></a></li></ul></div></li><li><a
+      href=\"http://www.sunstoneyoga.com/ProductsServices/Videos.aspx\"  tabindex=\"1\"><span>Videos</span></a></li><li
+      class=\"item downmenu\"><a href=\"http://www.sunstoneyoga.com/ProductsServices/Tuition.aspx\"
+      \ tabindex=\"1\"><span>Tuition<img border=\"0\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/action_right.gif\"
+      class=\"rightarrow\" alt=\"Tuition\"/></span></a><div class=\"slide\"><ul class=\"H
+      Group Level1\"><li class=\"first\"><a href=\"http://www.sunstoneyoga.com/ProductsServices/Tuition/AutoDebitForms.aspx\"
+      \ tabindex=\"1\"><span>Auto-Debit Forms</span></a></li></ul></div></li><li><a
+      href=\"http://www.sunstoneyoga.com/ProductsServices/KarmaPoints.aspx\"  tabindex=\"1\"><span>Karma
+      Points</span></a></li><li><a href=\"http://www.sunstoneyoga.com/ProductsServices/GetPaidToDoYogatrade.aspx\"
+      \ tabindex=\"1\"><span>Get Paid To Do Yoga&trade;</span></a></li></ul></div></li><li
+      id =\"root4\" class=\"item\"><a href=\"http://www.sunstoneyoga.com/Store.aspx\"
+      \ tabindex=\"1\"><span>Store</span></a></li><li id =\"root5\" class=\"item downmenu\"><a
+      href=\"http://www.sunstoneyoga.com/About.aspx\"  tabindex=\"1\"><span>About<img
+      border=\"0\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/action.gif\"
+      class=\"downarrow\" alt=\"About\"/></span></a><div class=\"slide\"><ul class=\"H
+      Group Level0\"><li class=\"first\"><a href=\"http://www.sunstoneyoga.com/About/MeetYourTeachers.aspx\"
+      \ tabindex=\"1\"><span>Meet Your Teachers</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/WelcomeLetter.aspx\"
+      \ tabindex=\"1\"><span>Welcome Letter</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/YogaEtiquette.aspx\"
+      \ tabindex=\"1\"><span>Yoga Etiquette</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/Sunstone2189.aspx\"
+      \ tabindex=\"1\"><span>Sunstone 2&#189;</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/FocusWristbandstrade.aspx\"
+      \ tabindex=\"1\"><span>Focus Wristbands&trade;</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/60DayYogaChallenge.aspx\"
+      \ tabindex=\"1\"><span>60-Day Yoga Challenge</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/WhyYogaWorks.aspx\"
+      \ tabindex=\"1\"><span>Why Yoga Works</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/PainFreeYoga.aspx\"
+      \ tabindex=\"1\"><span>Pain Free Yoga</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/HeatHumidityYou.aspx\"
+      \ tabindex=\"1\"><span>Heat, Humidity & You</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/Testimonials.aspx\"
+      \ tabindex=\"1\"><span>Testimonials</span></a></li><li><a href=\"http://www.sunstoneyoga.com/About/News.aspx\"
+      \ tabindex=\"1\"><span>News</span></a></li><li><a href=\"http://blog.sunstoneyoga.com\"
+      \ tabindex=\"1\"><span>Blog</span></a></li></ul></div></li><li id =\"root6\"
+      class=\"item downmenu\"><a href=\"http://www.sunstoneyoga.com/Support.aspx\"
+      \ tabindex=\"1\"><span>Support<img border=\"0\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/action.gif\"
+      class=\"downarrow\" alt=\"Support\"/></span></a><div class=\"slide\"><ul class=\"H
+      Group Level0\"><li class=\"first\"><a href=\"http://www.sunstoneyoga.com/Support/Forums.aspx\"
+      \ tabindex=\"1\"><span>Forums</span></a></li><li><a href=\"http://www.sunstoneyoga.com/Support/FAQs.aspx\"
+      \ tabindex=\"1\"><span>FAQs</span></a></li><li><a href=\"http://www.sunstoneyoga.com/Support/SiteMap.aspx\"
+      \ tabindex=\"1\"><span>Site Map</span></a></li></ul></div></li></ul></div>\r\n<script
+      type=\"text/javascript\">\r\n<!--\r\nwindow[\"cssmenu0\"] = DnnSkinNav.Create(\"cssmenu0\");window[\"cssmenu0\"].Initialize({\"Enabled\":true},{});\r\n-->\r\n</script>\r\n\r\n</div>\r\n\t\t\r\n<div
+      id=\"dnn_BannerPane\" class=\"bannerpane dnnwrapper\"><div class=\"DnnModule
+      DnnModule-DNN_HTML DnnModule-2253\"><a name=\"2253\"></a>\r\n<div class=\"container04\">\r\n<b
+      class=\"b1\"><b class=\"b2\"><b class=\"b3\"></b></b></b>\r\n<div class=\"c1\"><div
+      class=\"c2\"><div class=\"c3\"><span class=\"micon\"></span><div style=\"float:right\"><a
+      id=\"dnn_ctr2253_dnnVISIBILITY_cmdVisibility\" title=\"Minimize\" href=\"javascript:__doPostBack(&#39;dnn$ctr2253$dnnVISIBILITY$cmdVisibility&#39;,&#39;&#39;)\"><img
+      id=\"dnn_ctr2253_dnnVISIBILITY_imgVisibility\" title=\"Minimize\" src=\"/Portals/_default/Containers/1Sunstone-Apple/min.gif\"
+      alt=\"Minimize\" /></a></div><span id=\"dnn_ctr2253_dnnTITLE_titleLabel\" class=\"titleblack\">Class
+      Legend</span>\r\n\r\n\r\n<div id=\"dnn_ctr2253_ContentPane\" class=\"containerpane
+      DNNAlignleft\">\r\n<!-- Start_Module_2253 --><div id=\"dnn_ctr2253_ModuleContent\"
+      class=\"DNNModuleContent ModDNNHTMLC\">\r\n\t<div id=\"dnn_ctr2253_HtmlModule_lblContent\"
+      class=\"Normal\">\r\n\t<table cellspacing=\"1\" cellpadding=\"1\" border=\"0\">\r\n
+      \   <tbody>\r\n        <tr>\r\n            <td width=\"50\"><a href=\"/tabid/73/Default.aspx#2252\"><img
+      width=\"149\" height=\"29\" border=\"0\" src=\"/Portals/0/Images/intro2.gif\"
+      alt=\"\" /></a></td>\r\n            <td>&#160;</td>\r\n            <td width=\"50\"><a
+      href=\"/tabid/73/Default.aspx#405\"><img width=\"149\" height=\"29\" border=\"0\"
+      src=\"/Portals/0/Images/fire2.gif\" alt=\"\" /></a></td>\r\n            <td>&#160;</td>\r\n
+      \           <td width=\"50\"><a href=\"/tabid/73/Default.aspx#406\"><img width=\"149\"
+      height=\"29\" border=\"0\" src=\"/Portals/0/Images/earth2.gif\" alt=\"\" /></a></td>\r\n
+      \           <td>&#160;</td>\r\n            <td width=\"50\"><a href=\"/tabid/73/Default.aspx#407\"><img
+      width=\"149\" height=\"29\" border=\"0\" src=\"/Portals/0/Images/metal2.gif\"
+      alt=\"\" /></a></td>\r\n            <td>&#160;</td>\r\n            <td width=\"50\"><a
+      href=\"/tabid/73/Default.aspx#408\"><img width=\"149\" height=\"29\" border=\"0\"
+      src=\"/Portals/0/Images/watereps2.gif\" alt=\"\" /></a></td>\r\n            <td>&#160;</td>\r\n
+      \           <td width=\"50\"><a href=\"/tabid/73/Default.aspx#409\"><img width=\"149\"
+      height=\"29\" border=\"0\" src=\"/Portals/0/Images/wood2.gif\" alt=\"\" /></a></td>\r\n
+      \           <td>&#160;</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n</div>\r\n\r\n</div><!--
+      End_Module_2253 --></div><div class=\"ccontrol\"></div><img src=\"/Portals/_default/Containers/1Sunstone-Apple/spacer.gif\"
+      class=\"clr\" alt=\" \" /></div></div></div>\r\n<b class=\"b4\"><b class=\"b5\"><b
+      class=\"b6\"></b></b></b>\r\n\r\n</div>\r\n</div></div>\r\n<div id=\"dnnbreader\"
+      class=\"dnnwrapper\">\r\n<div class=\"addthis_toolbox addthis_default_style\">\n<div
+      class=\"breader\"><a class=\"addthis_button_facebook\"></a><a class=\"addthis_button_twitter\"></a><a
+      class=\"addthis_button_linkedin\"></a><a class=\"addthis_button_compact\"></a>You
+      are here <span id=\"dnn_dnnBREADCRUMB_lblBreadCrumb\"><a href=\"http://www.sunstoneyoga.com/LocationsSchedules.aspx\"
+      class=\"breadcrumb\">Locations & Schedules</a></span>\r\n</div><div class=\"date\"><div
+      class=\"language-object\" >\r\n\r\n\r\n</div><span id=\"dnn_dnnCURRENTDATE_lblDate\"
+      class=\"currentdate\">Monday, January 16, 2012</span>\r\n\r\n\t</div>\r\n</div></div>\r\n\r\n\r\n\r\n<div
+      class=\"mainbg dnnwrapper\"><div id=\"MainContent\">\r\n\t\t<div id=\"dnn_TopPane\"
+      class=\"toppane\"><div class=\"DnnModule DnnModule-DNN_Announcements DnnModule-1778\"><a
+      name=\"1778\"></a>\r\n<div class=\"container04\">\r\n<b class=\"b1\"><b class=\"b2\"><b
+      class=\"b3\"></b></b></b>\r\n<div class=\"c1\"><div class=\"c2\"><div class=\"c3\"><span
+      class=\"micon\"></span><div style=\"float:right\"><a id=\"dnn_ctr1778_dnnVISIBILITY_cmdVisibility\"
+      title=\"Maximize\" href=\"javascript:__doPostBack(&#39;dnn$ctr1778$dnnVISIBILITY$cmdVisibility&#39;,&#39;&#39;)\"><img
+      id=\"dnn_ctr1778_dnnVISIBILITY_imgVisibility\" title=\"Maximize\" src=\"/Portals/_default/Containers/1Sunstone-Apple/max.gif\"
+      alt=\"Maximize\" /></a></div><span id=\"dnn_ctr1778_dnnTITLE_titleLabel\" class=\"titleblack\">Updates
+      - Press Plus Sign to Expand --></span>\r\n\r\n\r\n<div id=\"dnn_ctr1778_ContentPane\"
+      class=\"containerpane DNNAlignleft\">\r\n<!-- Start_Module_1778 --><!-- End_Module_1778
+      --></div><div class=\"ccontrol\"></div><img src=\"/Portals/_default/Containers/1Sunstone-Apple/spacer.gif\"
+      class=\"clr\" alt=\" \" /></div></div></div>\r\n<b class=\"b4\"><b class=\"b5\"><b
+      class=\"b6\"></b></b></b>\r\n\r\n</div>\r\n</div><div class=\"DnnModule DnnModule-DNN_HTML
+      DnnModule-2620\"><a name=\"2620\"></a>\r\n<div class=\"container04\">\r\n<b
+      class=\"b1\"><b class=\"b2\"><b class=\"b3\"></b></b></b>\r\n<div class=\"c1\"><div
+      class=\"c2\"><div class=\"c3\"><span class=\"micon\"></span><div style=\"float:right\"><a
+      id=\"dnn_ctr2620_dnnVISIBILITY_cmdVisibility\" title=\"Minimize\" href=\"javascript:__doPostBack(&#39;dnn$ctr2620$dnnVISIBILITY$cmdVisibility&#39;,&#39;&#39;)\"><img
+      id=\"dnn_ctr2620_dnnVISIBILITY_imgVisibility\" title=\"Minimize\" src=\"/Portals/_default/Containers/1Sunstone-Apple/min.gif\"
+      alt=\"Minimize\" /></a></div><span id=\"dnn_ctr2620_dnnTITLE_titleLabel\" class=\"titleblack\">Class
+      Finder</span>\r\n\r\n\r\n<div id=\"dnn_ctr2620_ContentPane\" class=\"containerpane
+      DNNAlignleft\">\r\n<!-- Start_Module_2620 --><div id=\"dnn_ctr2620_ModuleContent\"
+      class=\"DNNModuleContent ModDNNHTMLC\">\r\n\t<div id=\"dnn_ctr2620_HtmlModule_lblContent\"
+      class=\"Normal\">\r\n\t<p>Looking for a particular class? Use our new <a href=\"/classfinder.aspx\">Class
+      Finder</a>!</p>\r\n</div>\r\n\r\n</div><!-- End_Module_2620 --></div><div class=\"ccontrol\"></div><img
+      src=\"/Portals/_default/Containers/1Sunstone-Apple/spacer.gif\" class=\"clr\"
+      alt=\" \" /></div></div></div>\r\n<b class=\"b4\"><b class=\"b5\"><b class=\"b6\"></b></b></b>\r\n\r\n</div>\r\n</div><div
+      class=\"DnnModule DnnModule-VivoGroups DnnModule-2104\"><a name=\"2104\"></a><div
+      id=\"dnn_ctr2104_ContentPane\" class=\"DNNAlignleft\"><!-- Start_Module_2104
+      --><div id=\"dnn_ctr2104_ModuleContent\" class=\"DNNModuleContent ModVivoGroupsC\">\r\n\t<div
+      class=\"GroupMain-block\">\r\n  <div class=\"groupMenuBar\">\r\n    <div class=\"groupMenuBarInside\">\r\n
+      \     <div class=\"groupSubHeadTitle\" id=\"GroupHeaderLinkTitle\"> <span class=\"groupbrowse\"></span>
+      <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupslist/Default.aspx\">Browse
+      Locations</a>\r\n        <span class=\"groupbrowse\"></span><a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/map/Default.aspx\">Map
+      Locations</a><span class=\"groupsearch\"></span> <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupssearch/Default.aspx\">Search
+      Locations</a><span class=\"groupslatest\"></span><a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/latestgroups/Default.aspx\">Latest
+      Locations</a>\r\n        \r\n        </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n
+      \       <div class=\"GroupBreadcrumb-block\">\r\n  <div class=\"groupbreadcrumbBar\"><div
+      class=\"groupbreadcrumbBarInside\">\r\n    <div class=\"groupSubHeadTitle\"><span
+      class=\"groupbreadcrumb\"></span><a href='http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupslist/categoryid/5/Default.aspx'
+      class=\"NormalBold\">Sunstone Yoga Locations</a>\r\n\r\n</div></div>\r\n  </div></div>\r\n</div>\r\n<table
+      class=\"LatestGroupsTable\" border=\"0\">\r\n  <tr>\r\n    <td class=\"LatestGroupsListTable\">\r\n
+      \       <div class=\"Latest-block\">\r\n  <div class=\"groupBar\"><div class=\"groupBarInside\">\r\n
+      \   <div class=\"groupSubHeadTitle\"><span class=\"groupbrowse\"></span>Browse
+      Locations</div></div>\r\n  </div></div>\r\n</div>\r\n<table class=\"LatestGroupsTable\"
+      border=\"0\">\r\n\r\n  <tr>\r\n    <td class=\"LatestGroupsListTable\"></td>\r\n
+      \ </tr>\r\n\r\n  <tr>\r\n    <td class=\"LatestGroupsListTable\"><table id=\"dnn_ctr2104_ViewVivoGroups_ctl01\"
+      cellspacing=\"0\" width=\"100%\">\r\n\t\t<tr>\r\n\t\t\t<td valign=\"top\"><div
+      class=\"maingroupBar\">\r\n<div class=\"maingroupBarInside\">\r\n<div class=\"groupminheight\">\r\n<table
+      width=\"100%\" border=\"0\">\r\n  <tr>\r\n    <td width=\"110\" id=\"groupsDiv1\"><div
+      class=\"Thumbnail-Block\"><div class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n
+      \ <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n    <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/15/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=13&q=1&fullScale=0&s=0\"
+      alt=\"Centre at Preston Ridge\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Centre at Preston Ridge\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/15/fview/groupslist/categoryid/5/Default.aspx\">Centre
+      at Preston Ridge</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t8250
+      Gaylord Parkway, Ste 9 <br />\r\n\tFrisco TX 75034<br />\r\n\t214.764.2119 x106<br
+      />\r\n\tcentre_preston_ridge@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Metal20x20.gif\" alt=\"Metal Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\"
+      alt=\"Water Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\"
+      border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Progression20x20.gif\" alt=\"Progression\" border=\"0\"
+      /></a></span>\r\n\r\n</div></div></td>\r\n    </tr>\r\n</table>  \r\n</div></div></div>\r\n</td><td><div
+      class=\"SeparotarPad\"><div class=\"hrclass\"></div></div></td><td valign=\"top\"><div
+      class=\"maingroupBar_alt\">\r\n<div class=\"maingroupBarInside_alt\">\r\n<div
+      class=\"groupminheight_alt\">\r\n<table width=\"100%\" border=\"0\">\r\n  <tr>\r\n
+      \   <td width=\"110\" id=\"groupsDiv1\"><div class=\"Thumbnail-Block\"><div
+      class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n  <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n
+      \   <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/19/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=14&q=1&fullScale=0&s=0\"
+      alt=\"Eldorado Crossings\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Eldorado Crossings\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/19/fview/groupslist/categoryid/5/Default.aspx\">Eldorado
+      Crossings</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t3180
+      W Eldorado Parkway Suite 100 <br />\r\n\tMcKinney TX 75070<br />\r\n\t214.764.2119
+      x112<br />\r\n\teldorado_crossings@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Metal20x20.gif\"
+      alt=\"Metal Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\" alt=\"Water
+      Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Progression20x20.gif\"
+      alt=\"Progression\" border=\"0\" /></a></span>\r\n\r\n</div></div></td>\r\n
+      \   </tr>\r\n</table>  \r\n</div></div></div></td><td><div class=\"SeparotarPad\"><div
+      class=\"hrclass\"></div></div></td>\r\n\t\t</tr><tr>\r\n\t\t\t<td valign=\"top\"><div
+      class=\"maingroupBar\">\r\n<div class=\"maingroupBarInside\">\r\n<div class=\"groupminheight\">\r\n<table
+      width=\"100%\" border=\"0\">\r\n  <tr>\r\n    <td width=\"110\" id=\"groupsDiv1\"><div
+      class=\"Thumbnail-Block\"><div class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n
+      \ <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n    <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/17/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=16&q=1&fullScale=0&s=0\"
+      alt=\"Las Colinas Village\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Las Colinas Village\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/17/fview/groupslist/categoryid/5/Default.aspx\">Las
+      Colinas Village</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t975
+      W. John Carpenter Freeway, Suite 109A <br />\r\n\tIrving TX 75039<br />\r\n\t214.764.2119
+      x115<br />\r\n\tlas_colinas_village@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Metal20x20.gif\" alt=\"Metal Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\"
+      alt=\"Water Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\"
+      border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Progression20x20.gif\" alt=\"Progression\" border=\"0\"
+      /></a></span>\r\n\r\n</div></div></td>\r\n    </tr>\r\n</table>  \r\n</div></div></div>\r\n</td><td><div
+      class=\"SeparotarPad\"><div class=\"hrclass\"></div></div></td><td valign=\"top\"><div
+      class=\"maingroupBar_alt\">\r\n<div class=\"maingroupBarInside_alt\">\r\n<div
+      class=\"groupminheight_alt\">\r\n<table width=\"100%\" border=\"0\">\r\n  <tr>\r\n
+      \   <td width=\"110\" id=\"groupsDiv1\"><div class=\"Thumbnail-Block\"><div
+      class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n  <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n
+      \   <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/13/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=17&q=1&fullScale=0&s=0\"
+      alt=\"North Dallas\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"North Dallas\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/13/fview/groupslist/categoryid/5/Default.aspx\">North
+      Dallas</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t14902
+      Preston Road, #612<br />\r\n\tDallas TX 75254<br />\r\n\t214.764.2119 x104<br
+      />\r\n\tnorth_dallas@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Metal20x20.gif\" alt=\"Metal Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\"
+      alt=\"Water Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\"
+      border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Progression20x20.gif\" alt=\"Progression\" border=\"0\"
+      /></a></span>\r\n\r\n</div></div></td>\r\n    </tr>\r\n</table>  \r\n</div></div></div></td><td><div
+      class=\"SeparotarPad\"><div class=\"hrclass\"></div></div></td>\r\n\t\t</tr><tr>\r\n\t\t\t<td
+      valign=\"top\"><div class=\"maingroupBar\">\r\n<div class=\"maingroupBarInside\">\r\n<div
+      class=\"groupminheight\">\r\n<table width=\"100%\" border=\"0\">\r\n  <tr>\r\n
+      \   <td width=\"110\" id=\"groupsDiv1\"><div class=\"Thumbnail-Block\"><div
+      class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n  <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n
+      \   <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/12/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=19&q=1&fullScale=0&s=0\"
+      alt=\"North Hills Center\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"North Hills Center\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/12/fview/groupslist/categoryid/5/Default.aspx\">North
+      Hills Center</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t10710
+      Research Blvd, Ste 326 <br />\r\n\tAustin TX 78759<br />\r\n\t512.287.7047 x114<br
+      />\r\n\tnorth_hills_center@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Metal20x20.gif\" alt=\"Metal Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\"
+      alt=\"Water Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\"
+      border=\"0\" /></a></span>\r\n\r\n</div></div></td>\r\n    </tr>\r\n</table>
+      \ \r\n</div></div></div>\r\n</td><td><div class=\"SeparotarPad\"><div class=\"hrclass\"></div></div></td><td
+      valign=\"top\"><div class=\"maingroupBar_alt\">\r\n<div class=\"maingroupBarInside_alt\">\r\n<div
+      class=\"groupminheight_alt\">\r\n<table width=\"100%\" border=\"0\">\r\n  <tr>\r\n
+      \   <td width=\"110\" id=\"groupsDiv1\"><div class=\"Thumbnail-Block\"><div
+      class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n  <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n
+      \   <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/24/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=26&q=1&fullScale=0&s=0\"
+      alt=\"Preston Forest Village\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Preston Forest Village\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/24/fview/groupslist/categoryid/5/Default.aspx\">Preston
+      Forest Village</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t11661
+      Preston Road #206 <br />\r\n\tDallas TX 75230<br />\r\n\t214.764.2119 x102<br
+      />\r\n\tpreston_forest_village@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Metal20x20.gif\"
+      alt=\"Metal Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\" alt=\"Water
+      Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Progression20x20.gif\"
+      alt=\"Progression\" border=\"0\" /></a></span>\r\n\r\n</div></div></td>\r\n
+      \   </tr>\r\n</table>  \r\n</div></div></div></td><td><div class=\"SeparotarPad\"><div
+      class=\"hrclass\"></div></div></td>\r\n\t\t</tr><tr>\r\n\t\t\t<td valign=\"top\"><div
+      class=\"maingroupBar\">\r\n<div class=\"maingroupBarInside\">\r\n<div class=\"groupminheight\">\r\n<table
+      width=\"100%\" border=\"0\">\r\n  <tr>\r\n    <td width=\"110\" id=\"groupsDiv1\"><div
+      class=\"Thumbnail-Block\"><div class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n
+      \ <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n    <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/20/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=18&q=1&fullScale=0&s=0\"
+      alt=\"Preston Towne Crossing\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Preston Towne Crossing\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/20/fview/groupslist/categoryid/5/Default.aspx\">Preston
+      Towne Crossing</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t4909
+      West Park Blvd. #183 <br />\r\n\tPlano TX 75093<br />\r\n\t214.764.2119 x103<br
+      />\r\n\tpreston_towne_crossing@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Metal20x20.gif\" alt=\"Metal Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\"
+      alt=\"Water Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\"
+      border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/84Asanas20x20.gif\" alt=\"84 Asanas\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Progression20x20.gif\"
+      alt=\"Progression\" border=\"0\" /></a></span>\r\n\r\n</div></div></td>\r\n
+      \   </tr>\r\n</table>  \r\n</div></div></div>\r\n</td><td><div class=\"SeparotarPad\"><div
+      class=\"hrclass\"></div></div></td><td valign=\"top\"><div class=\"maingroupBar_alt\">\r\n<div
+      class=\"maingroupBarInside_alt\">\r\n<div class=\"groupminheight_alt\">\r\n<table
+      width=\"100%\" border=\"0\">\r\n  <tr>\r\n    <td width=\"110\" id=\"groupsDiv1\"><div
+      class=\"Thumbnail-Block\"><div class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n
+      \ <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n    <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/22/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=20&q=1&fullScale=0&s=0\"
+      alt=\"Rockwall Village\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Rockwall Village\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/22/fview/groupslist/categoryid/5/Default.aspx\">Rockwall
+      Village</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t449
+      East I-30 &amp;amp; Ridge Road<br />\r\n\tRockwall TX 75087<br />\r\n\t214.764.2119
+      x110<br />\r\n\trockwall_village@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Metal20x20.gif\" alt=\"Metal Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\"
+      alt=\"Water Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\"
+      border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Progression20x20.gif\" alt=\"Progression\" border=\"0\"
+      /></a></span>\r\n\r\n</div></div></td>\r\n    </tr>\r\n</table>  \r\n</div></div></div></td><td><div
+      class=\"SeparotarPad\"><div class=\"hrclass\"></div></div></td>\r\n\t\t</tr><tr>\r\n\t\t\t<td
+      valign=\"top\"><div class=\"maingroupBar\">\r\n<div class=\"maingroupBarInside\">\r\n<div
+      class=\"groupminheight\">\r\n<table width=\"100%\" border=\"0\">\r\n  <tr>\r\n
+      \   <td width=\"110\" id=\"groupsDiv1\"><div class=\"Thumbnail-Block\"><div
+      class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n  <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n
+      \   <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/27/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=33&q=1&fullScale=0&s=0\"
+      alt=\"Skillman Live Oak\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Skillman Live Oak\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/27/fview/groupslist/categoryid/5/Default.aspx\">Skillman
+      Live Oak</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t1920
+      Skillman<br />\r\n\tDallas TX 75206<br />\r\n\t214.764.2119 x113<br />\r\n\tskillman_live_oak@sunstoneyoga.com</div>\r\n
+      \ \r\n  <div class=\"GroupList\">\r\n    <span class=\"grouplistsummary\"><a
+      href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Intro20x20.gif\"
+      alt=\"Intro Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\" alt=\"Fire Series\"
+      border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Metal20x20.gif\"
+      alt=\"Metal Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\" alt=\"Water
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Progression20x20.gif\"
+      alt=\"Progression\" border=\"0\" /></a></span>\r\n\r\n</div></div></td>\r\n
+      \   </tr>\r\n</table>  \r\n</div></div></div>\r\n</td><td><div class=\"SeparotarPad\"><div
+      class=\"hrclass\"></div></div></td><td valign=\"top\"><div class=\"maingroupBar_alt\">\r\n<div
+      class=\"maingroupBarInside_alt\">\r\n<div class=\"groupminheight_alt\">\r\n<table
+      width=\"100%\" border=\"0\">\r\n  <tr>\r\n    <td width=\"110\" id=\"groupsDiv1\"><div
+      class=\"Thumbnail-Block\"><div class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n
+      \ <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n    <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/23/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=22&q=1&fullScale=0&s=0\"
+      alt=\"Southlake Village\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Southlake Village\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/23/fview/groupslist/categoryid/5/Default.aspx\">Southlake
+      Village</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t2140
+      East Southlake Blvd <br />\r\n\tSouthlake TX 76092<br />\r\n\t682.651.2692 x109<br
+      />\r\n\tsouthlake_village@sunstoneyoga.com</div>\r\n  \r\n  <div class=\"GroupList\">\r\n
+      \   <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\"
+      alt=\"Fire Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Metal20x20.gif\"
+      alt=\"Metal Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\" alt=\"Water
+      Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Progression20x20.gif\"
+      alt=\"Progression\" border=\"0\" /></a></span>\r\n\r\n</div></div></td>\r\n
+      \   </tr>\r\n</table>  \r\n</div></div></div></td><td><div class=\"SeparotarPad\"><div
+      class=\"hrclass\"></div></div></td>\r\n\t\t</tr><tr>\r\n\t\t\t<td valign=\"top\"><div
+      class=\"maingroupBar\">\r\n<div class=\"maingroupBarInside\">\r\n<div class=\"groupminheight\">\r\n<table
+      width=\"100%\" border=\"0\">\r\n  <tr>\r\n    <td width=\"110\" id=\"groupsDiv1\"><div
+      class=\"Thumbnail-Block\"><div class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n
+      \ <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n    <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/37/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=35&q=1&fullScale=0&s=0\"
+      alt=\"Sunstone Yoga Academy\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Sunstone Yoga Academy\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/37/fview/groupslist/categoryid/5/Default.aspx\">Sunstone
+      Yoga Academy</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t4540
+      Beltway Dr<br />\r\n\tAddison TX 75219<br />\r\n\t214.764.2119 x3<br />\r\n\tacademy@sunstoneyoga.com</div>\r\n
+      \ \r\n  <div class=\"GroupList\">\r\n    <span class=\"grouplistsummary\">Check
+      out all our program details on our <a href=\"/ProductsServices/Workshops.aspx\">workshops</a>
+      page and our <a href=\"/ProductsServices/TeacherTraining.aspx\">teacher training</a>
+      page.</span>\r\n\r\n</div></div></td>\r\n    </tr>\r\n</table>  \r\n</div></div></div>\r\n</td><td><div
+      class=\"SeparotarPad\"><div class=\"hrclass\"></div></div></td><td valign=\"top\"><div
+      class=\"maingroupBar_alt\">\r\n<div class=\"maingroupBarInside_alt\">\r\n<div
+      class=\"groupminheight_alt\">\r\n<table width=\"100%\" border=\"0\">\r\n  <tr>\r\n
+      \   <td width=\"110\" id=\"groupsDiv1\"><div class=\"Thumbnail-Block\"><div
+      class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n  <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n
+      \   <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/14/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=24&q=1&fullScale=0&s=0\"
+      alt=\"The Pines of Flower Mound\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"The Pines of Flower Mound\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/14/fview/groupslist/categoryid/5/Default.aspx\">The
+      Pines of Flower Mound</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t1121
+      Flower Mound Road, Ste 520<br />\r\n\tFlower Mound TX 75028<br />\r\n\t214.764.2119
+      x107<br />\r\n\tthe_pines_of_flower_mound@sunstoneyoga.com</div>\r\n  \r\n  <div
+      class=\"GroupList\">\r\n    <span class=\"grouplistsummary\"><a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Intro20x20.gif\" alt=\"Intro
+      Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Fire20x20.gif\" alt=\"Fire Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Earth20x20.gif\"
+      alt=\"Earth Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Metal20x20.gif\" alt=\"Metal
+      Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Water20x20.gif\" alt=\"Water Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Wood20x20.gif\"
+      alt=\"Wood Series\" border=\"0\" /></a> <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Progression20x20.gif\" alt=\"Progression\" border=\"0\"
+      /></a></span>\r\n\r\n</div></div></td>\r\n    </tr>\r\n</table>  \r\n</div></div></div></td><td><div
+      class=\"SeparotarPad\"><div class=\"hrclass\"></div></div></td>\r\n\t\t</tr><tr>\r\n\t\t\t<td
+      valign=\"top\"><div class=\"maingroupBar\">\r\n<div class=\"maingroupBarInside\">\r\n<div
+      class=\"groupminheight\">\r\n<table width=\"100%\" border=\"0\">\r\n  <tr>\r\n
+      \   <td width=\"110\" id=\"groupsDiv1\"><div class=\"Thumbnail-Block\"><div
+      class=\"gpGalleryPhotostbList\"><div class=\"gpGalleryPhotos\">\r\n  <div class=\"gpGalleryPhotosthumbnail-frame\">\r\n
+      \   <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/25/fview/groupslist/categoryid/5/Default.aspx\"><img
+      src=\"/DesktopModules/VivoGroups/ImageHandler.ashx?width=90&height=0&portalId=0&moduleId=2104&mediaId=27&q=1&fullScale=0&s=0\"
+      alt=\"Uptown Plaza\" border=\"0\" /></a></div>\r\n  </div></div></div></td>\r\n
+      \   <td id=\"groupsDiv3\">\r\n  <div>\r\n    <div class=\"grouplisttitle\" id=\"GroupLink\"
+      title=\"Uptown Plaza\">\r\n     <a href=\"http://www.sunstoneyoga.com/LocationsSchedules/tabid/63/view/groupdetail/groupid/25/fview/groupslist/categoryid/5/Default.aspx\">Uptown
+      Plaza</a></div>\r\n  </div>\r\n  \r\n    <div class=\"GroupList\">\r\n\t2907
+      Routh St<br />\r\n\tDallas TX 75201<br />\r\n\t214.764.2119 x101<br />\r\n\tuptown_plaza@sunstoneyoga.com</div>\r\n
+      \ \r\n  <div class=\"GroupList\">\r\n    <span class=\"grouplistsummary\"><a
+      href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Intro20x20.gif\"
+      alt=\"Intro Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Fire20x20.gif\" alt=\"Fire Series\"
+      border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Earth20x20.gif\" alt=\"Earth Series\" border=\"0\" /></a>
+      \ <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Metal20x20.gif\"
+      alt=\"Metal Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\"
+      target=\"_blank\"><img src=\"/Portals/0/Images/Water20x20.gif\" alt=\"Water
+      Series\" border=\"0\" /></a>  <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img
+      src=\"/Portals/0/Images/Wood20x20.gif\" alt=\"Wood Series\" border=\"0\" /></a>
+      <a href=\"/tabid/73/Default.aspx\" target=\"_blank\"><img src=\"/Portals/0/Images/Progression20x20.gif\"
+      alt=\"Progression\" border=\"0\" /></a></span>\r\n\r\n</div></div></td>\r\n
+      \   </tr>\r\n</table>  \r\n</div></div></div>\r\n</td><td></td><td></td><td></td>\r\n\t\t</tr>\r\n\t</table></td>\r\n
+      \ </tr>\r\n</table>\r\n        </td>\r\n  </tr>\r\n    <tr>\r\n    <td></td>\r\n
+      \ </tr>\r\n</table>\r\n    \r\n<span id=\"dnn_ctr2104_ViewVivoGroups_lblMsg\"></span>\r\n\r\n\r\n\r\n</div><!--
+      End_Module_2104 --></div>\r\n</div></div>\r\n\t\t\t<div class=\"dnnpanes\">\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t<div
+      class=\"clear\"></div>\r\n\t\t\t</div>\r\n\t\t<table width=\"100%\" border=\"0\"
+      cellspacing=\"0\" cellpadding=\"0\" class=\"clear\">\r\n        \t<tbody><tr>\r\n
+      \           \t\r\n                <td valign=\"top\" class=\"ContentPane\" align=\"center\">\r\n\t\t\t\t<div
+      class=\"middlecontent\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t</td>\r\n
+      \               \r\n\t\t\t</tr></tbody>\r\n\t\t</table>\r\n\t\t<div class=\"clear\">\r\n
+      \           \t\r\n                \r\n                \r\n                \r\n\t\t\t<div
+      class=\"clear\"></div>\r\n\t\t</div>\r\n\t\t\t\r\n\t</div>\t</div>\r\n\r\n</div>\r\n<div
+      id=\"dnnlinks\" class=\"dnnwrapper\"><span id=\"dnn_dnnLINKS_lblLinks\"><a class=\"links\"
+      href=\"http://www.sunstoneyoga.com/Home.aspx\">Home</a><span class=\"links\">|</span><a
+      class=\"links\" href=\"http://www.sunstoneyoga.com/LocationsSchedules.aspx\">Locations
+      & Schedules</a><span class=\"links\">|</span><a class=\"links\" href=\"http://www.sunstoneyoga.com/ProductsServices.aspx\">Products
+      & Services</a><span class=\"links\">|</span><a class=\"links\" href=\"http://www.sunstoneyoga.com/Store.aspx\">Store</a><span
+      class=\"links\">|</span><a class=\"links\" href=\"http://www.sunstoneyoga.com/About.aspx\">About</a><span
+      class=\"links\">|</span><a class=\"links\" href=\"http://www.sunstoneyoga.com/Support.aspx\">Support</a></span>\r\n</div>\r\n<div
+      align=\"center\"><span id=\"dnn_dnnCOPYRIGHT_lblCopyright\" class=\"copyright\">Copyright
+      2002-2012 by Sunstone Yoga LLC</span>\r\n<a id=\"dnn_dnnPRIVACY_hypPrivacy\"
+      class=\"terms\" rel=\"nofollow\" href=\"http://www.sunstoneyoga.com/privacy.aspx\">Privacy
+      Statement</a><a id=\"dnn_dnnTERMS_hypTerms\" class=\"terms\" rel=\"nofollow\"
+      href=\"http://www.sunstoneyoga.com/terms.aspx\">Terms Of Use</a>\r\n</div>\r\n<br
+      />\r\n<!--[if LT IE 7]><link id=\"IE6Minus\" rel=\"stylesheet\" type=\"text/css\"
+      href=\"/Portals/_default/Skins/1Sunstone-Orange/ie6skin.css\" /><![endif]-->\r\n<!--Page
+      option Start-->\r\n<div id=\"pageoption\" align=\"center\" style=\"display:none\">\r\n
+      \   <div class=\"spacer\"><a onclick=\"showClassList()\" title=\"Close Options\"
+      href=\"#\" class=\"close\">X</a></div>\r\n    <div class=\"dnnwrapper\">\r\n\t<h2>Page
+      Options</h2>\r\n\t<div class=\"themebox\">Background:<br />\r\n<script language=\"Javascript\"
+      type=\"text/javascript\">\r\n<!-- \r\nfunction successFunc(themeCookieId, themeCss,
+      themeValue, themeId)\r\n{\t\r\n\tvar imgThemes = dnn.dom.getById(\"themes\").getElementsByTagName(\"img\");\r\n\tfor(i=0;
+      i<imgThemes.length; i++) \r\n\t{imgThemes[i].className=\"themeOff\";}\r\n\t
+      document.getElementById(\"dnnskin_net_client_theme_id\").href = themeCss; \r\n\t
+      themeId.className=\"themeOn\";  \r\n\t document.cookie = themeCookieId + \"=\"
+      \ + escape(themeValue) + \";expires=\" + new Date(\"December 31, 2050 23:59:59\").toGMTString()
+      + \";path=/\";\r\n } \r\n //--> \r\n </script>\r\n<img src=\"/Portals/_default/Skins/1Sunstone-Orange/images/black.gif\"
+      id=\"dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_0\" longdesc=\"/Portals/_default/Skins/1Sunstone-Orange/themes/Black.css\"
+      title=\"Black\" alt=\"Black\" class=\"themeOff\" onclick=\"successFunc(&#39;DotNetNuke_Skin_Theme_Portal_0&#39;,
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_0&#39;).getAttribute(&#39;longdesc&#39;),
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_0&#39;).alt,dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_0&#39;))\"
+      /><img src=\"/Portals/_default/Skins/1Sunstone-Orange/images/color.gif\" id=\"dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_1\"
+      longdesc=\"/Portals/_default/Skins/1Sunstone-Orange/themes/Color.css\" title=\"Color\"
+      alt=\"Color\" class=\"themeOff\" onclick=\"successFunc(&#39;DotNetNuke_Skin_Theme_Portal_0&#39;,
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_1&#39;).getAttribute(&#39;longdesc&#39;),
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_1&#39;).alt,dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_1&#39;))\"
+      /><img src=\"/Portals/_default/Skins/1Sunstone-Orange/images/gray.gif\" id=\"dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_2\"
+      longdesc=\"/Portals/_default/Skins/1Sunstone-Orange/themes/Gray.css\" title=\"Gray\"
+      alt=\"Gray\" class=\"themeOff\" onclick=\"successFunc(&#39;DotNetNuke_Skin_Theme_Portal_0&#39;,
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_2&#39;).getAttribute(&#39;longdesc&#39;),
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_2&#39;).alt,dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_2&#39;))\"
+      /><img src=\"/Portals/_default/Skins/1Sunstone-Orange/images/white.gif\" id=\"dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_3\"
+      longdesc=\"/Portals/_default/Skins/1Sunstone-Orange/themes/White.css\" title=\"White\"
+      alt=\"White\" class=\"themeOff\" onclick=\"successFunc(&#39;DotNetNuke_Skin_Theme_Portal_0&#39;,
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_3&#39;).getAttribute(&#39;longdesc&#39;),
+      dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_3&#39;).alt,dnn.dom.getById(&#39;dnn_ctl01_ctl00_repeaterThemes_btnChangeTheme_3&#39;))\"
+      />\r\n</div>\r\n\t<div class=\"layoutbox\">Page width and font size:<br /><script
+      language='Javascript' type='text/javascript'>function setLayout(size){ document.cookie
+      = 'DNN_Skin_Layout_Portal_0=' + escape(size) + ';expires=' + new Date('December
+      31, 2050 23:59:59').toGMTString() + ';path=/';location.reload();}</script><a
+      href=\"javascript:void(0)\"><img id=\"dnn_ctl02_layoutSmall\" onclick=\"setLayout(0)\"
+      alt=\"Small width layout\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/icon-layout-small.gif\"
+      /></a><a href=\"javascript:void(0)\"><img id=\"dnn_ctl02_layoutMedium\" onclick=\"setLayout(1)\"
+      alt=\"Medium width layout\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/icon-layout-medium-on.gif\"
+      /></a><a href=\"javascript:void(0)\"><img id=\"dnn_ctl02_layoutMaximum\" onclick=\"setLayout(2)\"
+      alt=\"Maximum width layout\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/icon-layout-large.gif\"
+      /></a><script language='Javascript' type='text/javascript'>function setText(size){
+      document.cookie = 'DNN_Skin_Text_Portal_0=' + escape(size) + ';expires=' + new
+      Date('December 31, 2050 23:59:59').toGMTString() + ';path=/';location.reload();}</script><a
+      href=\"javascript:void(0)\"><img id=\"dnn_ctl02_textMaximum\" onclick=\"setText(2)\"
+      alt=\"Maximum text\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/icon-text-large.gif\"
+      /></a><a href=\"javascript:void(0)\"><img id=\"dnn_ctl02_textMedium\" onclick=\"setText(1)\"
+      alt=\"Medium text\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/icon-text-medium.gif\"
+      /></a><a href=\"javascript:void(0)\"><img id=\"dnn_ctl02_textSmall\" onclick=\"setText(0)\"
+      alt=\"Small text\" src=\"/Portals/_default/Skins/1Sunstone-Orange/images/icon-text-small-on.gif\"
+      /></a></div>\r\n    </div>\r\n</div>\r\n<!--Page option End-->\r\n<script type=\"text/javascript\">var
+      gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" :
+      \"http://www.\");document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js'
+      type='text/javascript'%3E%3C/script%3E\"));</script>\r\n<script type=\"text/javascript\">var
+      pageTracker = _gat._getTracker(\"UA-220538-2\");pageTracker._initData();pageTracker._trackPageview();</script>\r\n<script
+      type=\"text/javascript\">var addthis_config = {ui_cobrand: \"Sunstone Yoga\",\"data_track_clickback\":true};</script>\n<script
+      type=\"text/javascript\" src=\"https://s7.addthis.com/js/250/addthis_widget.js#pubid=sunstoneyoga\"></script>\r\n\r\n\r\n\r\n
+      \       <input name=\"ScrollTop\" type=\"hidden\" id=\"ScrollTop\" />\r\n        <input
+      name=\"__dnnVariable\" type=\"hidden\" id=\"__dnnVariable\" value=\"`{`__dnn_1778:defminimized`:`true`,`vgmOrganizer`:``,`vgmCropPhoto`:``,`vgmThumbnail`:``,`vgmGroupLogo`:`1`}\"
+      />\r\n        \r\n    \r\n<script type=\"text/javascript\" src=\"/Resources/Shared/scripts/initWidgets.js\"
+      ></script></form>\r\n    \r\n    \r\n    <script type=\"text/javascript\">\r\n
+      \       //<![CDATA[\r\n        \r\n        //This code is to force a refresh
+      of browser cache\r\n        //in case an old version of dnn.js is loaded\r\n
+      \       //It should be removed as soon as .js versioning is added\r\n        jQuery(document).ready(function
+      () {\r\n            if (navigator.userAgent.indexOf(\" Chrome/\") == -1) {\r\n
+      \               if ((typeof dnnJscriptVersion === 'undefined' || dnnJscriptVersion
+      !== \"6.0.0\") && typeof dnn !== 'undefined') {\r\n                    window.location.reload(true);\r\n
+      \               }\r\n            }\r\n        });\r\n         //]]>\r\n    </script>\r\n</body>\r\n</html>"
+    http_version: '1.1'
+  recorded_at: Mon, 16 Jan 2012 16:45:01 GMT
+recorded_with: VCR 2.0.0.rc1

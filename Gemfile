@@ -13,6 +13,7 @@ gem 'formtastic', '~> 2.0.2'
 
 gem 'nokogiri', '~> 1.5.0'
 gem 'ri_cal', '~> 0.8.8'
+gem 'httparty'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -39,6 +40,7 @@ gem 'jquery-rails'
 group :test, :development do
   gem 'rspec-rails', '~> 2.8.0'
   gem 'factory_girl_rails', '~> 1.5.0'
+  gem 'log_buddy', '~> 0.6.0'
 end
 
 group :development do

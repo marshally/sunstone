@@ -49,7 +49,8 @@ end
 
 Spork.each_run do
   SunstoneCal::Application.reload_routes!
-  FactoryGirl.reloadend
+  FactoryGirl.reload
+end
 
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
@@ -80,4 +81,3 @@ Spork.each_run do
 # These instructions should self-destruct in 10 seconds.  If they don't, feel
 # free to delete them.
 
-end

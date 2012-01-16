@@ -1,0 +1,29 @@
+%h1 Listing studios
+
+%table
+  %tr
+    %th Name
+    %th Address
+    %th Lat
+    %th Lng
+    %th Photo url
+    %th Studio url
+    %th
+    %th
+    %th
+
+  - @studios.each do |studio|
+    %tr
+      %td= studio.name
+      %td= studio.address
+      %td= studio.lat
+      %td= studio.lng
+      %td= studio.photo_url
+      %td= studio.studio_url
+      %td= link_to 'Show', studio
+      %td= link_to 'Edit', edit_studio_path(studio)
+      %td= link_to 'Destroy', studio, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Studio', new_studio_path
