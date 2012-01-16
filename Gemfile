@@ -49,6 +49,7 @@ group :development do
   gem 'guard-rspec', '~> 0.5.10'
   gem 'guard-pow', '~> 0.2.1'
   gem 'heroku'
+  gem 'growl', '~> 1.0.3'
 end
 
 group :test do
