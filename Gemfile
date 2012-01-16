@@ -25,6 +25,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'dalli' #, '~> 1.2.13'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
