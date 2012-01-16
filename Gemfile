@@ -63,3 +63,7 @@ group :test do
   gem 'spork', '~> 0.9.0.rc9'
   gem 'vcr', '2.0.0.rc1' #, :git => 'https://github.com/myronmarston/vcr.git'
 end
+
+group :production do
+  gem 'pg', '~> 0.12.2'
+end
