@@ -5,17 +5,12 @@
     %th Name
     %th Address
     %th
-    %th
-    %th
 
   - @studios.each do |studio|
     %tr
       %td= studio.name
       %td= studio.address
-      %td= link_to 'Show', studio
-      %td= link_to 'Edit', edit_studio_path(studio)
-      %td= link_to 'Destroy', studio, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'Calendar', studio_path(studio, :format => :ics)
 
 %br
 
-= link_to 'New Studio', new_studio_path
