@@ -24,6 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'bourbon'
 
 gem 'dalli' #, '~> 1.2.13'
 
