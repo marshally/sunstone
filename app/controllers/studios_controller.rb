@@ -1,5 +1,7 @@
 class StudiosController < ApplicationController
 
+  before_filter :authenticate, :except => [:schedule, :show, :index]
+
   def schedule
     @studio = Studio.find_by_slug(params[:id])
 
@@ -27,6 +29,7 @@ class StudiosController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @studio }
+      format.ics { send_data(Rails.cache.read("#{@studio.slug}/ics"), :filename=>"#{@studio.slug}.ics", :disposition=>"inline; filename=#{@studio.slug}.ics", :type=>"text/calendar")}
     end
   end
 
