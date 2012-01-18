@@ -36,9 +36,11 @@ class Studio < ActiveRecord::Base
       studio ||= Studio.find_by_name(name.gsub("Center", "Centre"))
       studio ||= Studio.find_by_name("The #{name}")
 
-      cal = RiCal.Calendar do
+      cal = RiCal.Calendar do |cal|
+        cal.add_x_property("X-WR-CALNAME", "#{studio.name} Sunstone Yoga Class Schedule")
+        
         classes.each do |klass|
-          event do
+          cal.event do
             summary     "#{klass[:klass]} (#{studio.name})"
             description klass[:klass]
             dtstart     klass[:t_start]
@@ -70,7 +72,8 @@ class Studio < ActiveRecord::Base
       tr = anchor.parent.parent.parent.parent
       tr.css('div.GroupList').each do |div|
         next if div.children.count < 5
-        s.address = div.content.strip.gsub(/\t/, " ")
+        pieces = div.content.strip.gsub(/\t/, " ").gsub(/\r/, "").gsub("\n ", "\n").split("\n")
+        s.address = pieces[0..-3].join("\n")
       end
 
       s.photo_url = "http://www.sunstoneyoga.com" + tr.at_css('img')['src']
