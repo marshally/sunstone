@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.0.rc2'
+gem 'rails', '~> 3.2.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -9,7 +9,7 @@ gem 'sqlite3'
 
 gem 'haml', '~> 3.1.4'
 gem 'haml-rails', '~> 0.3.4'
-gem 'formtastic', '~> 2.0.2'
+gem 'formtastic', '~> 2.1.0.beta1'
 
 gem 'nokogiri', '~> 1.5.0'
 gem 'ri_cal', '~> 0.8.8'
