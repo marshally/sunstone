@@ -14,6 +14,7 @@ describe Studio do
       end
     end
 
+
     describe ".crawl_classes" do
       it "should crawl studios" do
         VCR.use_cassette('studio/classes', :record => :new_episodes) do # , :record => :new_episodes
