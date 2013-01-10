@@ -20,145 +20,145 @@ require 'spec_helper'
 
 describe StudiosController do
 
-  # This should return the minimal set of attributes required to create a valid
-  # Studio. As you add validations to Studio, be sure to
-  # update the return value of this method accordingly.
-  def valid_attributes
-    {}
-  end
-  
-  # This should return the minimal set of values that should be in the session
-  # in order to pass any filters (e.g. authentication) defined in
-  # StudiosController. Be sure to keep this updated too.
-  def valid_session
-    {}
-  end
+  # # This should return the minimal set of attributes required to create a valid
+  # # Studio. As you add validations to Studio, be sure to
+  # # update the return value of this method accordingly.
+  # def valid_attributes
+  #   {}
+  # end
 
-  describe "GET index" do
-    it "assigns all studios as @studios" do
-      studio = Studio.create! valid_attributes
-      get :index, {}, valid_session
-      assigns(:studios).should eq([studio])
-    end
-  end
+  # # This should return the minimal set of values that should be in the session
+  # # in order to pass any filters (e.g. authentication) defined in
+  # # StudiosController. Be sure to keep this updated too.
+  # def valid_session
+  #   {}
+  # end
 
-  describe "GET show" do
-    it "assigns the requested studio as @studio" do
-      studio = Studio.create! valid_attributes
-      get :show, {:id => studio.to_param}, valid_session
-      assigns(:studio).should eq(studio)
-    end
-  end
+  # describe "GET index" do
+  #   it "assigns all studios as @studios" do
+  #     studio = Studio.create! valid_attributes
+  #     get :index, {}, valid_session
+  #     assigns(:studios).should eq([studio])
+  #   end
+  # end
 
-  describe "GET new" do
-    it "assigns a new studio as @studio" do
-      get :new, {}, valid_session
-      assigns(:studio).should be_a_new(Studio)
-    end
-  end
+  # describe "GET show" do
+  #   it "assigns the requested studio as @studio" do
+  #     studio = Studio.create! valid_attributes
+  #     get :show, {:id => studio.to_param}, valid_session
+  #     assigns(:studio).should eq(studio)
+  #   end
+  # end
 
-  describe "GET edit" do
-    it "assigns the requested studio as @studio" do
-      studio = Studio.create! valid_attributes
-      get :edit, {:id => studio.to_param}, valid_session
-      assigns(:studio).should eq(studio)
-    end
-  end
+  # describe "GET new" do
+  #   it "assigns a new studio as @studio" do
+  #     get :new, {}, valid_session
+  #     assigns(:studio).should be_a_new(Studio)
+  #   end
+  # end
 
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new Studio" do
-        expect {
-          post :create, {:studio => valid_attributes}, valid_session
-        }.to change(Studio, :count).by(1)
-      end
+  # describe "GET edit" do
+  #   it "assigns the requested studio as @studio" do
+  #     studio = Studio.create! valid_attributes
+  #     get :edit, {:id => studio.to_param}, valid_session
+  #     assigns(:studio).should eq(studio)
+  #   end
+  # end
 
-      it "assigns a newly created studio as @studio" do
-        post :create, {:studio => valid_attributes}, valid_session
-        assigns(:studio).should be_a(Studio)
-        assigns(:studio).should be_persisted
-      end
+  # describe "POST create" do
+  #   describe "with valid params" do
+  #     it "creates a new Studio" do
+  #       expect {
+  #         post :create, {:studio => valid_attributes}, valid_session
+  #       }.to change(Studio, :count).by(1)
+  #     end
 
-      it "redirects to the created studio" do
-        post :create, {:studio => valid_attributes}, valid_session
-        response.should redirect_to(Studio.last)
-      end
-    end
+  #     it "assigns a newly created studio as @studio" do
+  #       post :create, {:studio => valid_attributes}, valid_session
+  #       assigns(:studio).should be_a(Studio)
+  #       assigns(:studio).should be_persisted
+  #     end
 
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved studio as @studio" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Studio.any_instance.stub(:save).and_return(false)
-        post :create, {:studio => {}}, valid_session
-        assigns(:studio).should be_a_new(Studio)
-      end
+  #     it "redirects to the created studio" do
+  #       post :create, {:studio => valid_attributes}, valid_session
+  #       response.should redirect_to(Studio.last)
+  #     end
+  #   end
 
-      it "re-renders the 'new' template" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Studio.any_instance.stub(:save).and_return(false)
-        post :create, {:studio => {}}, valid_session
-        response.should render_template("new")
-      end
-    end
-  end
+  #   describe "with invalid params" do
+  #     it "assigns a newly created but unsaved studio as @studio" do
+  #       # Trigger the behavior that occurs when invalid params are submitted
+  #       Studio.any_instance.stub(:save).and_return(false)
+  #       post :create, {:studio => {}}, valid_session
+  #       assigns(:studio).should be_a_new(Studio)
+  #     end
 
-  describe "PUT update" do
-    describe "with valid params" do
-      it "updates the requested studio" do
-        studio = Studio.create! valid_attributes
-        # Assuming there are no other studios in the database, this
-        # specifies that the Studio created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        Studio.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, {:id => studio.to_param, :studio => {'these' => 'params'}}, valid_session
-      end
+  #     it "re-renders the 'new' template" do
+  #       # Trigger the behavior that occurs when invalid params are submitted
+  #       Studio.any_instance.stub(:save).and_return(false)
+  #       post :create, {:studio => {}}, valid_session
+  #       response.should render_template("new")
+  #     end
+  #   end
+  # end
 
-      it "assigns the requested studio as @studio" do
-        studio = Studio.create! valid_attributes
-        put :update, {:id => studio.to_param, :studio => valid_attributes}, valid_session
-        assigns(:studio).should eq(studio)
-      end
+  # describe "PUT update" do
+  #   describe "with valid params" do
+  #     it "updates the requested studio" do
+  #       studio = Studio.create! valid_attributes
+  #       # Assuming there are no other studios in the database, this
+  #       # specifies that the Studio created on the previous line
+  #       # receives the :update_attributes message with whatever params are
+  #       # submitted in the request.
+  #       Studio.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
+  #       put :update, {:id => studio.to_param, :studio => {'these' => 'params'}}, valid_session
+  #     end
 
-      it "redirects to the studio" do
-        studio = Studio.create! valid_attributes
-        put :update, {:id => studio.to_param, :studio => valid_attributes}, valid_session
-        response.should redirect_to(studio)
-      end
-    end
+  #     it "assigns the requested studio as @studio" do
+  #       studio = Studio.create! valid_attributes
+  #       put :update, {:id => studio.to_param, :studio => valid_attributes}, valid_session
+  #       assigns(:studio).should eq(studio)
+  #     end
 
-    describe "with invalid params" do
-      it "assigns the studio as @studio" do
-        studio = Studio.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Studio.any_instance.stub(:save).and_return(false)
-        put :update, {:id => studio.to_param, :studio => {}}, valid_session
-        assigns(:studio).should eq(studio)
-      end
+  #     it "redirects to the studio" do
+  #       studio = Studio.create! valid_attributes
+  #       put :update, {:id => studio.to_param, :studio => valid_attributes}, valid_session
+  #       response.should redirect_to(studio)
+  #     end
+  #   end
 
-      it "re-renders the 'edit' template" do
-        studio = Studio.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Studio.any_instance.stub(:save).and_return(false)
-        put :update, {:id => studio.to_param, :studio => {}}, valid_session
-        response.should render_template("edit")
-      end
-    end
-  end
+  #   describe "with invalid params" do
+  #     it "assigns the studio as @studio" do
+  #       studio = Studio.create! valid_attributes
+  #       # Trigger the behavior that occurs when invalid params are submitted
+  #       Studio.any_instance.stub(:save).and_return(false)
+  #       put :update, {:id => studio.to_param, :studio => {}}, valid_session
+  #       assigns(:studio).should eq(studio)
+  #     end
 
-  describe "DELETE destroy" do
-    it "destroys the requested studio" do
-      studio = Studio.create! valid_attributes
-      expect {
-        delete :destroy, {:id => studio.to_param}, valid_session
-      }.to change(Studio, :count).by(-1)
-    end
+  #     it "re-renders the 'edit' template" do
+  #       studio = Studio.create! valid_attributes
+  #       # Trigger the behavior that occurs when invalid params are submitted
+  #       Studio.any_instance.stub(:save).and_return(false)
+  #       put :update, {:id => studio.to_param, :studio => {}}, valid_session
+  #       response.should render_template("edit")
+  #     end
+  #   end
+  # end
 
-    it "redirects to the studios list" do
-      studio = Studio.create! valid_attributes
-      delete :destroy, {:id => studio.to_param}, valid_session
-      response.should redirect_to(studios_url)
-    end
-  end
+  # describe "DELETE destroy" do
+  #   it "destroys the requested studio" do
+  #     studio = Studio.create! valid_attributes
+  #     expect {
+  #       delete :destroy, {:id => studio.to_param}, valid_session
+  #     }.to change(Studio, :count).by(-1)
+  #   end
+
+  #   it "redirects to the studios list" do
+  #     studio = Studio.create! valid_attributes
+  #     delete :destroy, {:id => studio.to_param}, valid_session
+  #     response.should redirect_to(studios_url)
+  #   end
+  # end
 
 end
