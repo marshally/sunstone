@@ -9,7 +9,9 @@ describe "studios/index" do
         :lat => 1.5,
         :lng => 2.5,
         :photo_url => "Photo Url",
-        :studio_url => "Studio Url"
+        :studio_url => "Studio Url1",
+        :slug => "studio_url"
+
       ),
       stub_model(Studio,
         :name => "Name",
@@ -17,7 +19,8 @@ describe "studios/index" do
         :lat => 1.5,
         :lng => 2.5,
         :photo_url => "Photo Url",
-        :studio_url => "Studio Url"
+        :studio_url => "Studio Url2",
+        :slug => "studio_url2"
       )
     ])
   end
