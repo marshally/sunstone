@@ -9,8 +9,7 @@ gem 'sqlite3'
 
 gem 'haml', '~> 3.1.4'
 gem 'haml-rails', '~> 0.3.4'
-gem 'formtastic', '~> 2.0.2' #, :git => 'https://github.com/justinfrench/formtastic', :tag => '2.1.0.beta1'
-
+gem "formtastic", "~> 2.2"
 gem 'nokogiri', '~> 1.5.0'
 gem 'ri_cal', '~> 0.8.8'
 gem 'httparty'
@@ -24,8 +23,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'bourbon'
-
+gem 'formtastic-plus-bootstrap'
+gem "bootstrap-sass", "~> 2.3"
 gem 'dalli', '~> 1.1.4'
 
 # To use ActiveModel has_secure_password
