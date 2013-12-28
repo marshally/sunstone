@@ -53,6 +53,7 @@ group :development do
   gem 'guard-rspec', '~> 0.5.10'
   gem 'guard-pow', '~> 0.2.1'
   gem 'heroku'
+  gem 'taps'
   gem 'growl', '~> 1.0.3'
 end
 
@@ -62,8 +63,8 @@ group :test do
   gem 'timecop', '~> 0.3.5'
   gem 'fakeweb', '~> 1.3.0'
   gem 'rspec', '~> 2.8.0'
-  gem 'spork', '~> 0.9.0.rc9'
-  gem 'vcr', '2.0.0.rc1' #, :git => 'https://github.com/myronmarston/vcr.git'
+  gem 'spork', '~> 0.9.0'
+  gem 'vcr', '~> 2.4.0'
 end
 
 group :production do
