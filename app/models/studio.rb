@@ -75,7 +75,8 @@ class Studio < ActiveRecord::Base
 
       name = t.at_css("span.ctitle").content.gsub(/ - .*/, "")
 
-      s = Studio.find_or_create_by_studio_url(:studio_url => href, :name => name)
+      s = Studio.find_or_create_by_name(:name => name)
+      s.studio_url = href
 
       location = t.at_css("span.locadd").content
       pieces = location.strip.gsub(/\t/, " ").gsub(/\r/, "").gsub("\n ", "\n").split("\n")
