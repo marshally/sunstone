@@ -6,8 +6,6 @@ gem 'rails', '~> 3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 gem 'haml', '~> 3.1.4'
 gem 'haml-rails', '~> 0.3.4'
 gem "formtastic", "~> 2.2"
@@ -41,6 +39,8 @@ gem 'dalli', '~> 1.1.4'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test, :development do
+  gem 'sqlite3'
+
   gem 'rspec-rails', '~> 2.8.0'
   gem 'factory_girl_rails', '~> 1.5.0'
   gem 'log_buddy', '~> 0.6.0'
