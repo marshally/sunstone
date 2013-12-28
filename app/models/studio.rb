@@ -14,8 +14,8 @@ class Studio < ActiveRecord::Base
     doc.css('table.mGrid').each do |table|
       day = nil
       table.css('tr').each do |tr|
-        if tr.children.first.name == "th"
-          day = tr.at_css('th.grid-col-date').content.strip
+        if th = tr.at_css('th.grid-col-date')
+          day = th.content.strip
         else
           dt = tr.at_css('span.hc_date').content.strip
           klass = tr.at_css('span.classname').content.strip.gsub(/1 - T\d\d /, "")
@@ -32,6 +32,7 @@ class Studio < ActiveRecord::Base
 
     results.each do |name, classes|
       studio = Studio.find_by_name(name)
+
       studio ||= Studio.find_by_name(name.gsub(/s$/, ""))
       studio ||= Studio.find_by_name(name.gsub("Center", "Centre"))
       studio ||= Studio.find_by_name("The #{name}")
@@ -67,16 +68,25 @@ class Studio < ActiveRecord::Base
 
     doc = Nokogiri::HTML body
 
-    doc.css('div.grouplisttitle > a').each do |anchor|
-      s = Studio.find_or_create_by_studio_url(:studio_url => anchor['href'], :name => anchor.content)
+    doc.css('a.button_gray').each do |anchor|
+      href = anchor['href']
+      href = "http://www.sunstoneyoga.com" + href if href[0] = "/"
+      t = anchor.parent.parent.parent.parent.parent.parent.parent.parent.parent.parent
+
+      name = t.at_css("span.ctitle").content.gsub(/ - .*/, "")
+
+      s = Studio.find_or_create_by_studio_url(:studio_url => href, :name => name)
+
+      location = t.at_css("span.locadd").content
+      pieces = location.strip.gsub(/\t/, " ").gsub(/\r/, "").gsub("\n ", "\n").split("\n")
+      s.address = pieces.join("\n")
+
       tr = anchor.parent.parent.parent.parent
       tr.css('div.GroupList').each do |div|
         next if div.children.count < 5
-        pieces = div.content.strip.gsub(/\t/, " ").gsub(/\r/, "").gsub("\n ", "\n").split("\n")
-        s.address = pieces[0..-3].join("\n")
       end
 
-      s.photo_url = "http://www.sunstoneyoga.com" + tr.at_css('img')['src']
+      s.photo_url = "http://www.sunstoneyoga.com" + t.at_css('img.locimg')['src']
 
       s.slug ||= s.name.downcase.gsub(/[^a-z]+/, "_")
 
@@ -85,10 +95,10 @@ class Studio < ActiveRecord::Base
   end
 
   def self.locations_url
-    "http://www.sunstoneyoga.com/LocationsSchedules.aspx"
+    "http://www.sunstoneyoga.com/locations-schedules"
   end
 
   def self.schedule_url
-    "http://www.sunstoneyoga.com/classfinder.aspx"
+    "http://www.sunstoneyoga.com/class-finder"
   end
 end
