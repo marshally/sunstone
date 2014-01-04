@@ -20,22 +20,21 @@ class Studio < ActiveRecord::Base
           dt = tr.at_css('span.hc_date').content.strip
           klass = tr.at_css('span.classname').content.strip.gsub(/1 - T\d\d /, "")
           name = tr.at_css('span.location').content.strip
+          url = tr.at_css('span.location > a')['href']
 
           t_start = fix_date(day, dt.split(" - ").first)
           t_end   = fix_date(day, dt.split(" - ").last)
 
-          results[name] ||= Array.new
-          results[name] << {:name => name, :klass => klass, :t_start => t_start, :t_end => t_end}
+          results[url] ||= Array.new
+          results[url] << {:name => name, :klass => klass, :t_start => t_start, :t_end => t_end}
         end
       end
     end
 
-    results.each do |name, classes|
-      studio = Studio.find_by_name(name)
+    results.each do |url, classes|
+      studio = Studio.find_by_studio_url(url)
 
-      studio ||= Studio.find_by_name(name.gsub(/s$/, ""))
-      studio ||= Studio.find_by_name(name.gsub("Center", "Centre"))
-      studio ||= Studio.find_by_name("The #{name}")
+      next if studio.nil?
 
       cal = RiCal.Calendar do |cal|
         cal.add_x_property("X-WR-CALNAME", "#{studio.name} Sunstone Yoga Class Schedule")
