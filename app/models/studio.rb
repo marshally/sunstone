@@ -70,6 +70,12 @@ class Studio < ActiveRecord::Base
     doc.css('a.button_gray').each do |anchor|
       href = anchor['href']
       href = "http://www.sunstoneyoga.com" + href if href[0] = "/"
+
+      # hack for mangled old studio urls - El Dorado Crossing
+      if match = /\/(\w+).aspx$/.match(href)
+        href = "http://www.sunstoneyoga.com/#{match[1].downcase}"
+      end
+
       t = anchor.parent.parent.parent.parent.parent.parent.parent.parent.parent.parent
 
       name = t.at_css("span.ctitle").content.gsub(/ - .*/, "")
@@ -90,7 +96,7 @@ class Studio < ActiveRecord::Base
 
       s.slug ||= s.name.downcase.gsub(/[^a-z]+/, "_")
 
-      s.save if s.changed?
+      s.save
     end
   end
 
