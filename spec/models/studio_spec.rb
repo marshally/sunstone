@@ -8,7 +8,6 @@ describe Studio do
         s = Studio.first
         s.name.should == "North Hills Center"
         s.address.include?("10710 Research Blvd, #326").should == true
-        s.photo_url.should  == "http://www.sunstoneyoga.com/portals/0/Images_Locations/storefrontNHC.jpg"
         s.studio_url.should == "http://www.sunstoneyoga.com/nhc"
         Studio.count.should == 13
       end
