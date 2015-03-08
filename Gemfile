@@ -11,6 +11,7 @@ gem 'haml-rails', '~> 0.3.4'
 gem "formtastic", "~> 2.2"
 gem 'nokogiri', '~> 1.5.0'
 gem 'ri_cal', '~> 0.8.8'
+gem 'icalendar'
 gem 'httparty', '~> 0.11.0'
 
 # Gems used only for assets and not required
