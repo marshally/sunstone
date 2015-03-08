@@ -35,7 +35,6 @@ class Studio < ActiveRecord::Base
       end
     end
 
-
     results.each do |url, classes|
       studio = Studio.find_by_studio_url(url)
 
@@ -43,7 +42,7 @@ class Studio < ActiveRecord::Base
       Rails.cache.delete("#{studio.slug}/ics")
 
       cal = Icalendar::Calendar.new
-      cal.prodid = "PRODID:-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
+      cal.prodid = "-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
       classes.each do |klass|
         cal.event do |e|
           e.dtstart     = Icalendar::Values::DateTime.new(klass[:t_start])
