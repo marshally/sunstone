@@ -4,6 +4,7 @@ class StudiosController < ApplicationController
 
   def schedule
     @studio = Studio.find_by_slug(params[:id])
+    expires_now
 
     respond_to do |format|
       format.ics { send_data(@studio.calendar, :filename=>"#{@studio.slug}.ics", :disposition=>"inline; filename=#{@studio.slug}.ics", :type=>"text/calendar")}
