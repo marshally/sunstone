@@ -92,8 +92,6 @@ class Studio < ActiveRecord::Base
         next if div.children.count < 5
       end
 
-      s.photo_url = "http://www.sunstoneyoga.com" + t.at_css('img.locimg')['src']
-
       s.slug ||= s.name.downcase.gsub(/[^a-z]+/, "_")
 
       s.save
