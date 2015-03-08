@@ -41,9 +41,8 @@ class Studio < ActiveRecord::Base
 
       next if studio.nil?
 
-        # cal.add_x_property("X-WR-CALNAME", "#{studio.name} Sunstone Yoga Class Schedule")
-        
       cal = Icalendar::Calendar.new
+      cal.prodid = "PRODID:-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
       classes.each do |klass|
         cal.event do |e|
           e.dtstart     = Icalendar::Values::DateTime.new(klass[:t_start])
