@@ -40,6 +40,7 @@ class Studio < ActiveRecord::Base
       studio = Studio.find_by_studio_url(url)
 
       next if studio.nil?
+      Rails.cache.delete("#{studio.slug}/ics")
 
       cal = Icalendar::Calendar.new
       cal.prodid = "PRODID:-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
@@ -53,7 +54,6 @@ class Studio < ActiveRecord::Base
         end
       end
 
-      Rails.cache.delete("#{studio.slug}/ics")
       Rails.cache.write("#{studio.slug}/ics", cal.to_ical)
     end
   end
