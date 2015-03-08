@@ -49,7 +49,7 @@ class Studio < ActiveRecord::Base
             description klass[:klass]
             dtstart     klass[:t_start]
             dtend       klass[:t_end]
-            location    "#{studio.name}\n#{studio.address}"
+            location    "#{studio.name}"
           end
         end
       end.to_s
