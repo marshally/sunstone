@@ -1,5 +1,5 @@
-# ruby '1.9.2'
 source 'http://rubygems.org'
+ruby '2.2.1'
 
 gem 'rails', '~> 3.2.0'
 
