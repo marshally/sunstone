@@ -35,27 +35,27 @@ class Studio < ActiveRecord::Base
       end
     end
 
+
     results.each do |url, classes|
       studio = Studio.find_by_studio_url(url)
 
       next if studio.nil?
 
-      cal = RiCal.Calendar do |cal|
-        cal.add_x_property("X-WR-CALNAME", "#{studio.name} Sunstone Yoga Class Schedule")
+        # cal.add_x_property("X-WR-CALNAME", "#{studio.name} Sunstone Yoga Class Schedule")
         
-        classes.each do |klass|
-          cal.event do
-            summary     "#{klass[:klass]} (#{studio.name})"
-            description klass[:klass]
-            dtstart     klass[:t_start]
-            dtend       klass[:t_end]
-            location    "#{studio.name}"
-          end
+      cal = Icalendar::Calendar.new
+      classes.each do |klass|
+        cal.event do |e|
+          e.dtstart     = Icalendar::Values::DateTime.new(klass[:t_start])
+          e.dtend       = Icalendar::Values::DateTime.new(klass[:t_end])
+          e.summary     = "#{klass[:klass]} (#{studio.name})"
+          e.description = klass[:klass]
+          e.location    = studio.name
         end
-      end.to_s
+      end
 
       Rails.cache.delete("#{studio.slug}/ics")
-      Rails.cache.write("#{studio.slug}/ics", cal)
+      Rails.cache.write("#{studio.slug}/ics", cal.to_ical)
     end
   end
 
