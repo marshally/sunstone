@@ -6,7 +6,7 @@ class StudiosController < ApplicationController
     @studio = Studio.find_by_slug(params[:id])
 
     respond_to do |format|
-      format.ics { send_data(Rails.cache.read("#{@studio.slug}/ics"), :filename=>"#{@studio.slug}.ics", :disposition=>"inline; filename=#{@studio.slug}.ics", :type=>"text/calendar")}
+      format.ics { send_data(@studio.calendar, :filename=>"#{@studio.slug}.ics", :disposition=>"inline; filename=#{@studio.slug}.ics", :type=>"text/calendar")}
     end
   end
 

@@ -3,6 +3,10 @@ class Studio < ActiveRecord::Base
   def to_param
     slug
   end
+  
+  def calendar
+    Rails.cache.read("#{slug}/ics")
+  end
 
   def self.crawl_classes
     body = HTTParty.get schedule_url
