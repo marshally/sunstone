@@ -35,29 +35,40 @@ class Studio < ActiveRecord::Base
       end
     end
 
+    require 'icalendar/tzinfo'
     results.each do |url, classes|
       studio = Studio.find_by_studio_url(url)
 
       next if studio.nil?
-
-      cal = RiCal.Calendar do |cal|
-        cal.add_x_property("X-WR-CALNAME", "#{studio.name} Sunstone Yoga Class Schedule")
-        
-        classes.each do |klass|
-          cal.event do
-            summary     "#{klass[:klass]} (#{studio.name})"
-            description klass[:klass]
-            dtstart     klass[:t_start]
-            dtend       klass[:t_end]
-            location    "#{studio.name}"
-          end
-        end
-      end.to_s
-
       Rails.cache.delete("#{studio.slug}/ics")
-      Rails.cache.write("#{studio.slug}/ics", cal)
+
+      cal = Icalendar::Calendar.new
+      cal.prodid = "-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
+
+      cal.add_timezone timezone
+
+      classes.each do |klass|
+        cal.event do |e|
+          e.dtstart     = Icalendar::Values::DateTime.new(klass[:t_start])
+          e.dtend       = Icalendar::Values::DateTime.new(klass[:t_end])
+          e.summary     = "#{klass[:klass]} (#{studio.name})"
+          e.description = klass[:klass]
+          e.location    = studio.name
+        end
+      end
+
+      Rails.cache.write("#{studio.slug}/ics", cal.to_ical)
     end
   end
+
+  def self.timezone
+    tz.ical_timezone(Time.now, nil)
+  end
+
+  def self.tz
+    TZInfo::Timezone.get "America/Chicago"
+  end
+
 
   def self.fix_date(day, time)
     t = day + " " + time
