@@ -3,7 +3,7 @@ class Studio < ActiveRecord::Base
   def to_param
     slug
   end
-  
+
   def calendar
     Rails.cache.read("#{slug}/ics")
   end
@@ -73,7 +73,7 @@ class Studio < ActiveRecord::Base
   def self.fix_date(day, time)
     t = day + " " + time
     t.gsub!(/ ([AP]M)/, '\1').gsub!(/\./, ":")
-    
+
     Time.zone.parse(t)
   end
 
@@ -84,16 +84,16 @@ class Studio < ActiveRecord::Base
 
     doc.css('a.button_gray').each do |anchor|
       href = anchor['href']
-      href = "http://www.sunstoneyoga.com" + href if href[0] = "/"
+      href = "https://www.sunstonefit.com" + href if href.starts_with? "/"
 
       # hack for mangled old studio urls - El Dorado Crossing
       if match = /\/(\w+).aspx$/.match(href)
-        href = "http://www.sunstoneyoga.com/#{match[1].downcase}"
+        href = "https://www.sunstonefit.com/#{match[1].downcase}"
       end
 
-      t = anchor.parent.parent.parent.parent.parent.parent.parent.parent.parent.parent
+      t = anchor.parent.parent.parent.parent.parent.parent.parent.parent.parent
 
-      name = t.at_css("span.ctitle").content.gsub(/ - .*/, "")
+      name = t.at_css("span.title").content.gsub(/ - .*/, "")
 
       s = Studio.find_or_create_by_name(:name => name)
       s.studio_url = href
@@ -114,10 +114,10 @@ class Studio < ActiveRecord::Base
   end
 
   def self.locations_url
-    "http://www.sunstoneyoga.com/locations-schedules"
+    "https://www.sunstonefit.com/locations-schedules"
   end
 
   def self.schedule_url
-    "http://www.sunstoneyoga.com/class-finder"
+    "https://www.sunstonefit.com/class-finder"
   end
 end
