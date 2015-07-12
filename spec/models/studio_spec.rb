@@ -8,7 +8,7 @@ describe Studio do
         s = Studio.find_by_slug("north_hills_center")
         s.name.should == "North Hills Center"
         s.address.include?("10710 Research Blvd, #326").should == true
-        s.studio_url.should == "http://www.sunstonefit.com/nhc"
+        s.studio_url.should == "https://www.sunstonefit.com/nhc"
         Studio.count.should == 15
       end
     end
@@ -19,6 +19,8 @@ describe Studio do
         VCR.use_cassette('studio/classes') do
           Studio.crawl_studios
           Studio.crawl_classes
+          calendar = Studio.find_by_slug("north_hills_center").calendar
+          calendar.split("\n").count.should == 445
         end
       end
     end
