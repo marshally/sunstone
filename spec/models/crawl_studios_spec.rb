@@ -12,8 +12,7 @@ describe CrawlStudios do
     it "creates a studio" do
       s = Studio.find_by_slug("north_hills_center")
       # s.name.should == "North Hills Center"
-      # s.address.include?("10710 Research Blvd, #326").should == true
-      # s.studio_url.should == "https://www.sunstonefit.com/nhc"
+      s.address.include?("10710 Research Blvd, #326").should == true
       Studio.count.should == 15
     end
 

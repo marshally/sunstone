@@ -3,16 +3,14 @@ class CrawlStudios
 
   def perform
     locations.css('a.button_gray').each do |anchor|
-      t = anchor.parent.parent.parent.parent.parent.parent.parent.parent.parent
+      studio = studio_for(anchor)
 
-      name = t.at_css("span.title").content.gsub(/ - .*/, "")
+      name = studio.at_css("span.title").content.gsub(/ - .*/, "")
 
       s = Studio.find_or_create_by_name(name: name)
       s.studio_url = href_from(anchor)
+      s.address = location_of(studio)
 
-      location = t.at_css("span.locadd").content
-      pieces = location.strip.gsub(/\t/, " ").gsub(/\r/, "").gsub("\n ", "\n").split("\n")
-      s.address = pieces.join("\n")
 
       tr = anchor.parent.parent.parent.parent
       tr.css('div.GroupList').each do |div|
@@ -29,6 +27,10 @@ class CrawlStudios
     Nokogiri::HTML HTTParty.get(LOCATIONS_URL)
   end
 
+  def studio_for(anchor)
+    anchor.parent.parent.parent.parent.parent.parent.parent.parent.parent
+  end
+
   def href_from(anchor)
     href = anchor['href']
     href = "https://www.sunstonefit.com" + href if href.starts_with? "/"
@@ -39,5 +41,11 @@ class CrawlStudios
     end
 
     href
+  end
+
+  def location_of(studio)
+    location = studio.at_css("span.locadd").content
+    pieces = location.strip.gsub(/\t/, " ").gsub(/\r/, "").gsub("\n ", "\n").split("\n")
+    pieces.join("\n")
   end
 end
