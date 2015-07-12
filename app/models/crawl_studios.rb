@@ -5,11 +5,12 @@ class CrawlStudios
     locations.css('a.button_gray').each do |anchor|
       studio = studio_for(anchor)
 
-      s = Studio.find_or_create_by_name(name: name_of(studio))
-      s.studio_url = href_from(anchor)
-      s.address = location_of(studio)
-
-      s.save
+      Studio
+        .find_or_create_by_name(name: name_of(studio))
+        .update_attributes(
+          studio_url: href_from(anchor),
+          address: location_of(studio),
+        )
     end
   end
 
