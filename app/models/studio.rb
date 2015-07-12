@@ -9,8 +9,12 @@ class Studio < ActiveRecord::Base
     Rails.cache.read(cache_key)
   end
 
-  def cache_key
-    "#{slug}/ics"
+  def calendar=(value)
+    Rails.cache.write(cache_key, value)
+  end
+
+  def clear_calendar
+    Rails.cache.delete(cache_key)
   end
 
   def filename
@@ -29,5 +33,9 @@ class Studio < ActiveRecord::Base
 
   def generate_slug
     self.slug ||= name.downcase.gsub(/[^a-z]+/, "_")
+  end
+
+  def cache_key
+    "#{slug}/ics"
   end
 end
