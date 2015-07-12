@@ -10,7 +10,14 @@ class CrawlClasses
       next if studio.nil?
       studio.clear_calendar
 
-      cal = Icalendar::Calendar.new
+      studio.calendar = calendar_for(studio, classes).to_ical
+    end
+  end
+
+  private
+
+  def calendar_for(studio, classes)
+    Icalendar::Calendar.new.tap do |cal|
       cal.prodid = "-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
 
       cal.add_timezone timezone
@@ -24,11 +31,8 @@ class CrawlClasses
           e.location    = studio.name
         end
       end
-      studio.calendar = cal.to_ical
     end
   end
-
-  private
 
   def studios_with_classes
     body = HTTParty.get(SCHEDULE_URL)
