@@ -34,7 +34,7 @@ class Studio < ActiveRecord::Base
           t_end   = fix_date(day, dt.split(" - ").last)
 
           results[url] ||= Array.new
-          results[url] << {:name => name, :klass => klass, :t_start => t_start, :t_end => t_end}
+          results[url] << {name: name, klass: klass, t_start: t_start, t_end: t_end}
         end
       end
     end
@@ -99,7 +99,7 @@ class Studio < ActiveRecord::Base
 
       name = t.at_css("span.title").content.gsub(/ - .*/, "")
 
-      s = Studio.find_or_create_by_name(:name => name)
+      s = Studio.find_or_create_by_name(name: name)
       s.studio_url = href
 
       location = t.at_css("span.locadd").content

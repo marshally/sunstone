@@ -10,8 +10,7 @@
     %tr
       %td= studio.name
       %td= studio.address
-      %td= link_to 'Add to Google Calendar', "http://www.google.com/calendar/render?cid=#{CGI.escape(studio_path(studio, :format => :ics, :only_path => false))}"
-      %td= link_to 'Add to iCal', studio_path(studio, :format => :ics)
+      %td= link_to 'Add to Google Calendar', "http://www.google.com/calendar/render?cid=#{CGI.escape(studio_path(studio, format: :ics, only_path: false))}"
+      %td= link_to 'Add to iCal', studio_path(studio, format: :ics)
 
 %br
-

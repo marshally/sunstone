@@ -1,13 +1,13 @@
 class StudiosController < ApplicationController
 
-  before_filter :authenticate, :except => [:schedule, :show, :index]
+  before_filter :authenticate, except: [:schedule, :show, :index]
 
   def schedule
     @studio = Studio.find_by_slug(params[:id])
     expires_now
 
     respond_to do |format|
-      format.ics { send_data(@studio.calendar, :filename=>@studio.filename, :disposition=>"inline; filename=#{@studio.filename}", :type=>"text/calendar")}
+      format.ics { send_data(@studio.calendar, filename: @studio.filename, disposition: "inline; filename=#{@studio.filename}", type: "text/calendar")}
     end
   end
 
@@ -30,7 +30,7 @@ class StudiosController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @studio }
-      format.ics  { send_data(@studio.calendar), :filename=>@studio.filename, :disposition=>"inline; filename=#{@studio.filename}", :type=>"text/calendar")}
+      format.ics  { send_data(@studio.calendar, filename: @studio.filename, disposition: "inline; filename=#{@studio.filename}", type: "text/calendar")}
     end
   end
 

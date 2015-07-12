@@ -60,7 +60,7 @@ end
 
 group :test do
   # Pretty printed test output
-  gem 'turn', '~> 0.8.3', :require => false
+  gem 'turn', '~> 0.8.3', require: false
   gem 'timecop', '~> 0.3.5'
   gem 'fakeweb', '~> 1.3.0'
   gem 'rspec', '~> 2.8.0'
