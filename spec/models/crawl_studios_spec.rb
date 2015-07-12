@@ -5,7 +5,7 @@ describe CrawlStudios do
     before :each do
       Rails.cache.clear
       VCR.use_cassette('studio/locations') do
-        Studio.crawl_studios
+        CrawlStudios.new.perform
       end
     end
 

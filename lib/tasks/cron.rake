@@ -7,11 +7,11 @@ end
 namespace :crawl do
   desc "crawl studios"
   task studios: :environment do
-    Studio.crawl_studios
+    CrawlStudios.new.perform
   end
 
   desc "crawl classes"
   task classes: :environment do
-    Studio.crawl_classes
+    CrawlClasses.new.perform
   end
 end

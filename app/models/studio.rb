@@ -21,14 +21,6 @@ class Studio < ActiveRecord::Base
     "#{slug}.ics"
   end
 
-  def self.crawl_classes
-    CrawlClasses.new.perform
-  end
-
-  def self.crawl_studios
-    CrawlStudios.new.perform
-  end
-
   private
 
   def generate_slug
