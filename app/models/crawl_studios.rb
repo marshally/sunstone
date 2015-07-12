@@ -11,12 +11,6 @@ class CrawlStudios
       s.studio_url = href_from(anchor)
       s.address = location_of(studio)
 
-
-      tr = anchor.parent.parent.parent.parent
-      tr.css('div.GroupList').each do |div|
-        next if div.children.count < 5
-      end
-
       s.slug ||= s.name.downcase.gsub(/[^a-z]+/, "_")
 
       s.save
