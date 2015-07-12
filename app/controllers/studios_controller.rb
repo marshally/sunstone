@@ -30,7 +30,7 @@ class StudiosController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @studio }
-      format.ics  { send_data(Rails.cache.read("#{@studio.slug}/ics"), :filename=>@studio.filename, :disposition=>"inline; filename=#{@studio.filename}", :type=>"text/calendar")}
+      format.ics  { send_data(@studio.calendar), :filename=>@studio.filename, :disposition=>"inline; filename=#{@studio.filename}", :type=>"text/calendar")}
     end
   end
 
