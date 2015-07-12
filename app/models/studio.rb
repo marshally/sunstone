@@ -8,6 +8,10 @@ class Studio < ActiveRecord::Base
     Rails.cache.read("#{slug}/ics")
   end
 
+  def filename
+    "#{slug}.ics"
+  end
+
   def self.crawl_classes
     body = HTTParty.get schedule_url
 
