@@ -5,12 +5,10 @@ class CrawlClasses
 
   def perform
     studios_with_classes.each do |url, classes|
-      studio = Studio.find_by_studio_url(url)
-
-      next if studio.nil?
-      studio.clear_calendar
-
-      studio.calendar = calendar_for(studio, classes).to_ical
+      if studio = Studio.find_by_studio_url(url)
+        studio.clear_calendar
+        studio.calendar = calendar_for(studio, classes).to_ical
+      end
     end
   end
 
