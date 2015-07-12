@@ -45,14 +45,14 @@ class CrawlClasses
           day = th.content.strip
         else
           dt = tr.at_css('span.hc_date').content.strip
-          klass = tr.at_css('span.classname').content.strip.gsub(/1 - T\d\d /, "")
-          name = tr.at_css('span.location').content.strip
           url = tr.at_css('span.location > a')['href']
 
-          t_start = fix_date(day, dt.split(" - ").first)
-          t_end   = fix_date(day, dt.split(" - ").last)
-
-          results[url] << {name: name, klass: klass, t_start: t_start, t_end: t_end}
+          results[url] << {
+            name: tr.at_css('span.location').content.strip,
+            klass: tr.at_css('span.classname').content.strip.gsub(/1 - T\d\d /, ""),
+            t_start: fix_date(day, dt.split(" - ").first),
+            t_end: fix_date(day, dt.split(" - ").last),
+          }
         end
       end
     end
