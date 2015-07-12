@@ -6,7 +6,11 @@ class Studio < ActiveRecord::Base
   end
 
   def calendar
-    Rails.cache.read("#{slug}/ics")
+    Rails.cache.read(cache_key)
+  end
+
+  def cache_key
+    "#{slug}/ics"
   end
 
   def filename

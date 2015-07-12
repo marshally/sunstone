@@ -8,7 +8,7 @@ class CrawlClasses
       studio = Studio.find_by_studio_url(url)
 
       next if studio.nil?
-      Rails.cache.delete("#{studio.slug}/ics")
+      Rails.cache.delete(studio.cache_key)
 
       cal = Icalendar::Calendar.new
       cal.prodid = "-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
@@ -25,7 +25,7 @@ class CrawlClasses
         end
       end
 
-      Rails.cache.write("#{studio.slug}/ics", cal.to_ical)
+      Rails.cache.write(studio.cache_key, cal.to_ical)
     end
   end
 
