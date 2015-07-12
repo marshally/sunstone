@@ -4,7 +4,7 @@ class CrawlClasses
   SCHEDULE_URL="https://www.sunstonefit.com/class-finder"
 
   def perform
-    studios.each do |url, classes|
+    studios_with_classes.each do |url, classes|
       studio = Studio.find_by_studio_url(url)
 
       next if studio.nil?
@@ -30,7 +30,7 @@ class CrawlClasses
 
   private
 
-  def studios
+  def studios_with_classes
     body = HTTParty.get(SCHEDULE_URL)
 
     doc = Nokogiri::HTML(body)
