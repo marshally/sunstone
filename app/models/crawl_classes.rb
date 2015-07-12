@@ -1,3 +1,5 @@
+require 'icalendar/tzinfo'
+
 class CrawlClasses
   SCHEDULE_URL="https://www.sunstonefit.com/class-finder"
 
@@ -28,7 +30,6 @@ class CrawlClasses
       end
     end
 
-    require 'icalendar/tzinfo'
     results.each do |url, classes|
       studio = Studio.find_by_studio_url(url)
 
