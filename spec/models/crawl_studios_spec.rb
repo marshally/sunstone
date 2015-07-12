@@ -9,11 +9,18 @@ describe CrawlStudios do
       end
     end
 
-    it "creates a studio" do
-      s = Studio.find_by_slug("north_hills_center")
-      # s.name.should == "North Hills Center"
-      s.address.include?("10710 Research Blvd, #326").should == true
+    it "creates studios" do
       Studio.count.should == 15
+    end
+
+    it "parses names" do
+      s = Studio.find_by_slug("north_hills_center")
+      s.name.should == "North Hills Center"
+    end
+
+    it "parses addresses" do
+      s = Studio.find_by_slug("north_hills_center")
+      s.address.include?("10710 Research Blvd, #326").should == true
     end
 
     it "massages URLs" do

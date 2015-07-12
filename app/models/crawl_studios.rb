@@ -5,12 +5,9 @@ class CrawlStudios
     locations.css('a.button_gray').each do |anchor|
       studio = studio_for(anchor)
 
-      name = studio.at_css("span.title").content.gsub(/ - .*/, "")
-
-      s = Studio.find_or_create_by_name(name: name)
+      s = Studio.find_or_create_by_name(name: name_of(studio))
       s.studio_url = href_from(anchor)
       s.address = location_of(studio)
-
       s.slug ||= s.name.downcase.gsub(/[^a-z]+/, "_")
 
       s.save
@@ -35,6 +32,10 @@ class CrawlStudios
     end
 
     href
+  end
+
+  def name_of(studio)
+    name = studio.at_css("span.title").content.gsub(/ - .*/, "")
   end
 
   def location_of(studio)
