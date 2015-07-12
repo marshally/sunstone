@@ -36,7 +36,7 @@ class CrawlClasses
 
     doc = Nokogiri::HTML(body)
 
-    results = Hash.new
+    results = Hash.new { |h, k| h[k] = [] }
 
     doc.css('table.mGrid').each do |table|
       day = nil
@@ -52,7 +52,6 @@ class CrawlClasses
           t_start = fix_date(day, dt.split(" - ").first)
           t_end   = fix_date(day, dt.split(" - ").last)
 
-          results[url] ||= Array.new
           results[url] << {name: name, klass: klass, t_start: t_start, t_end: t_end}
         end
       end
