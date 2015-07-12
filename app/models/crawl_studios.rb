@@ -2,11 +2,7 @@ class CrawlStudios
   LOCATIONS_URL="https://www.sunstonefit.com/locations-schedules"
 
   def perform
-    body = HTTParty.get LOCATIONS_URL
-
-    doc = Nokogiri::HTML body
-
-    doc.css('a.button_gray').each do |anchor|
+    locations.css('a.button_gray').each do |anchor|
       href = anchor['href']
       href = "https://www.sunstonefit.com" + href if href.starts_with? "/"
 
@@ -35,5 +31,9 @@ class CrawlStudios
 
       s.save
     end
+  end
+
+  def locations
+    Nokogiri::HTML HTTParty.get(LOCATIONS_URL)
   end
 end
