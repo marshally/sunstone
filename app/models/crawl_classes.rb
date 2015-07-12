@@ -69,7 +69,6 @@ class CrawlClasses
     TZInfo::Timezone.get "America/Chicago"
   end
 
-
   def fix_date(day, time)
     t = day + " " + time
     t.gsub!(/ ([AP]M)/, '\1').gsub!(/\./, ":")
