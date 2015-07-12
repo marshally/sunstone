@@ -1,4 +1,6 @@
 class Studio < ActiveRecord::Base
+  LOCATIONS_URL="https://www.sunstonefit.com/locations-schedules"
+  SCHEDULE_URL="https://www.sunstonefit.com/class-finder"
 
   def to_param
     slug
@@ -13,7 +15,7 @@ class Studio < ActiveRecord::Base
   end
 
   def self.crawl_classes
-    body = HTTParty.get schedule_url
+    body = HTTParty.get(SCHEDULE_URL)
 
     doc = Nokogiri::HTML body
 
@@ -82,7 +84,7 @@ class Studio < ActiveRecord::Base
   end
 
   def self.crawl_studios
-    body = HTTParty.get locations_url
+    body = HTTParty.get LOCATIONS_URL
 
     doc = Nokogiri::HTML body
 
@@ -115,13 +117,5 @@ class Studio < ActiveRecord::Base
 
       s.save
     end
-  end
-
-  def self.locations_url
-    "https://www.sunstonefit.com/locations-schedules"
-  end
-
-  def self.schedule_url
-    "https://www.sunstonefit.com/class-finder"
   end
 end
