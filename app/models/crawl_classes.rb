@@ -4,9 +4,37 @@ class CrawlClasses
   SCHEDULE_URL="https://www.sunstonefit.com/class-finder"
 
   def perform
+    studios.each do |url, classes|
+      studio = Studio.find_by_studio_url(url)
+
+      next if studio.nil?
+      Rails.cache.delete("#{studio.slug}/ics")
+
+      cal = Icalendar::Calendar.new
+      cal.prodid = "-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
+
+      cal.add_timezone timezone
+
+      classes.each do |klass|
+        cal.event do |e|
+          e.dtstart     = Icalendar::Values::DateTime.new(klass[:t_start])
+          e.dtend       = Icalendar::Values::DateTime.new(klass[:t_end])
+          e.summary     = "#{klass[:klass]} (#{studio.name})"
+          e.description = klass[:klass]
+          e.location    = studio.name
+        end
+      end
+
+      Rails.cache.write("#{studio.slug}/ics", cal.to_ical)
+    end
+  end
+
+  private
+
+  def studios
     body = HTTParty.get(SCHEDULE_URL)
 
-    doc = Nokogiri::HTML body
+    doc = Nokogiri::HTML(body)
 
     results = Hash.new
 
@@ -30,29 +58,7 @@ class CrawlClasses
       end
     end
 
-    results.each do |url, classes|
-      studio = Studio.find_by_studio_url(url)
-
-      next if studio.nil?
-      Rails.cache.delete("#{studio.slug}/ics")
-
-      cal = Icalendar::Calendar.new
-      cal.prodid = "-//Sunstone Yoga//#{studio.name} Yoga Class Schedule//EN\n”;"
-
-      cal.add_timezone timezone
-
-      classes.each do |klass|
-        cal.event do |e|
-          e.dtstart     = Icalendar::Values::DateTime.new(klass[:t_start])
-          e.dtend       = Icalendar::Values::DateTime.new(klass[:t_end])
-          e.summary     = "#{klass[:klass]} (#{studio.name})"
-          e.description = klass[:klass]
-          e.location    = studio.name
-        end
-      end
-
-      Rails.cache.write("#{studio.slug}/ics", cal.to_ical)
-    end
+    results
   end
 
   def timezone
