@@ -1,15 +1,6 @@
 class StudiosController < ApplicationController
 
-  before_filter :authenticate, except: [:schedule, :show, :index]
-
-  def schedule
-    @studio = Studio.find_by_slug(params[:id])
-    expires_now
-
-    respond_to do |format|
-      format.ics { send_data(@studio.calendar, filename: @studio.filename, disposition: "inline; filename=#{@studio.filename}", type: "text/calendar")}
-    end
-  end
+  before_filter :authenticate, except: [:show, :index]
 
   # GET /studios
   # GET /studios.json

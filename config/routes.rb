@@ -1,9 +1,5 @@
 SunstoneCal::Application.routes.draw do
-  resources :studios do
-    member do
-      get 'schedule'
-    end
-  end
+  resources :studios
 
   root to: 'studios#index'
 end
