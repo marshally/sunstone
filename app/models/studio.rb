@@ -1,4 +1,6 @@
 class Studio < ActiveRecord::Base
+  before_save :generate_slug
+
   def to_param
     slug
   end
@@ -17,5 +19,11 @@ class Studio < ActiveRecord::Base
 
   def self.crawl_studios
     CrawlStudios.new.perform
+  end
+
+  private
+
+  def generate_slug
+    self.slug ||= name.downcase.gsub(/[^a-z]+/, "_")
   end
 end

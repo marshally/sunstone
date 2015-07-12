@@ -8,7 +8,6 @@ class CrawlStudios
       s = Studio.find_or_create_by_name(name: name_of(studio))
       s.studio_url = href_from(anchor)
       s.address = location_of(studio)
-      s.slug ||= s.name.downcase.gsub(/[^a-z]+/, "_")
 
       s.save
     end
