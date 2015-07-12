@@ -14,6 +14,8 @@ class CrawlStudios
     end
   end
 
+  private
+
   def locations
     Nokogiri::HTML HTTParty.get(LOCATIONS_URL)
   end
