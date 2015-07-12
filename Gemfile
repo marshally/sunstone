@@ -10,6 +10,8 @@ gem 'nokogiri', '~> 1.5.0'
 gem 'icalendar'
 gem 'httparty', '~> 0.11.0'
 
+gem 'dotenv-rails'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
