@@ -25,7 +25,7 @@ describe CrawlClasses do
     end
 
     it "parses class names" do
-      first_class.should include("SUMMARY:Earth")
+      first_class.should include("Hot Yoga (NHC)")
     end
 
     it "parses class start times" do
