@@ -37,13 +37,18 @@ class CrawlStudios
   end
 
   def name_of(studio)
-    studio.at_css("h3.heading-primary > span").content.gsub(/ - .*/, "").strip
+    studio.
+      at_css("h3.heading-primary > span").
+      content.
+      gsub(/ - .*/, "").
+      strip.
+      titleize
   end
 
   def location_of(studio)
     location = studio.at_css("h3.heading-primary > span").parent.parent.content
     pieces = location.strip.gsub(/\t/, "").gsub(/\r/, "").gsub(/\n\s+/, "\n").split("\n")
     pieces.pop
-    pieces.join("\n")
+    pieces.join("\n").titleize
   end
 end
