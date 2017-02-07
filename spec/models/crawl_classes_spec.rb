@@ -11,7 +11,7 @@ describe CrawlClasses do
     end
 
     it "works" do
-      calendar.split("\n").count.should == 400
+      calendar.split("\n").count.should == 442
     end
 
     it "has a ICS header" do
