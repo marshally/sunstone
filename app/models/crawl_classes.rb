@@ -51,7 +51,6 @@ class CrawlClasses
           results[url] << {
             name: tr.at_css('span.location').content.strip,
             klass: tr.at_css('span.classname').content.strip.gsub(/1 - T\d\d /, ""),
-            url: url,
             studio_code: url.split("/").last.upcase,
             t_start: fix_date(day, dt.split(" - ").first),
             t_end: fix_date(day, dt.split(" - ").last),

@@ -3,9 +3,7 @@ class CrawlStudios
 
   def perform
     locations.xpath('//a[contains(text(), "Details")]').each do |anchor|
-      # print anchor
       studio = studio_for(anchor)
-      # print location_of(studio)
       Studio
         .find_or_create_by_name(name: name_of(studio))
         .update_attributes(
