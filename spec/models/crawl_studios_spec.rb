@@ -10,7 +10,7 @@ describe CrawlStudios do
     end
 
     it "creates studios" do
-      Studio.count.should == 15
+      Studio.count.should == 16
     end
 
     it "parses names" do
