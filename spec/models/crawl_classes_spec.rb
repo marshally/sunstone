@@ -11,7 +11,7 @@ describe CrawlClasses do
     end
 
     it "works" do
-      calendar.split("\n").count.should == 445
+      calendar.split("\n").count.should == 400
     end
 
     it "has a ICS header" do
@@ -21,19 +21,19 @@ describe CrawlClasses do
     end
 
     it "parses classes" do
-      classes.count.should == 48
+      classes.count.should == 43
     end
 
     it "parses class names" do
-      first_class.should include("SUMMARY:Earth")
+      first_class.should include("Hot Yoga (NHC)")
     end
 
     it "parses class start times" do
-      first_class.should include("DTSTART:20150627T091500")
+      first_class.should include("DTSTART:20170207T090000")
     end
 
     it "parses class end times" do
-      first_class.should include("DTEND:20150627T100000")
+      first_class.should include("DTEND:20170207T100000")
     end
 
     private
