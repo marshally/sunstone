@@ -5,9 +5,10 @@ class CrawlStudios
     locations.xpath('//a[contains(text(), "Details")]').each do |anchor|
       studio = studio_for(anchor)
       Studio
-        .find_or_create_by_name(name: name_of(studio))
+        .find_or_create_by_name_and_studio_url(
+          name: name_of(studio),
+          studio_url: href_from(anchor))
         .update_attributes(
-          studio_url: href_from(anchor),
           address: location_of(studio),
         )
     end
