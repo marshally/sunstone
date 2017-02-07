@@ -29,6 +29,7 @@ group :test, :development do
   gem 'rspec-rails', '~> 2.8.0'
   gem 'factory_girl_rails', '~> 1.5.0'
   gem 'log_buddy', '~> 0.6.0'
+  gem 'rubocop'
 end
 
 group :development do
