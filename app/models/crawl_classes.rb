@@ -26,7 +26,7 @@ class CrawlClasses
           e.dtend       = Icalendar::Values::DateTime.new(klass[:t_end])
           e.summary     = "#{klass[:klass]} (#{klass[:studio_code]})"
           e.description = klass[:klass]
-          e.location    = [studio.name, studio.address].join("\n")
+          e.location    = studio.name
         end
       end
     end
