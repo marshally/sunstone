@@ -8,6 +8,7 @@ class CrawlClasses
   def perform
     studios_with_classes.each do |slug, classes|
       if studio = Studio.where("studio_url LIKE ?", ["%",slug.downcase].join).first
+        puts "found #{classes.count} classes for #{slug}"
         studio.clear_calendar
         studio.calendar = calendar_for(studio, classes).to_ical
       end

@@ -4,6 +4,7 @@ class CrawlStudios
   def perform
     locations.xpath("//a[@itemprop='url']").each do |anchor|
       next if anchor["href"] == "/"
+      puts "found studio #{anchor["href"]}"
       studio = studio_for(anchor)
       Studio
         .find_or_create_by_name_and_studio_url(
