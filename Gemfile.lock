@@ -28,7 +28,6 @@ GEM
     activesupport (3.2.22)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    addressable (2.3.8)
     ansi (1.4.3)
     arel (3.0.3)
     ast (2.3.0)
@@ -48,7 +47,6 @@ GEM
     dotenv-rails (2.0.1)
       dotenv (= 2.0.1)
     erubis (2.7.0)
-    excon (0.45.3)
     execjs (2.0.2)
     factory_girl (2.4.2)
       activesupport
@@ -84,16 +82,6 @@ GEM
       activesupport (>= 3.1, < 4.1)
       haml (~> 3.1)
       railties (>= 3.1, < 4.1)
-    heroku (3.39.1)
-      heroku-api (>= 0.3.19)
-      launchy (>= 0.3.2)
-      multi_json (>= 1.10)
-      netrc (>= 0.10.0)
-      rest-client (>= 1.6.0)
-      rubyzip (>= 0.9.9)
-    heroku-api (0.3.23)
-      excon (~> 0.44)
-      multi_json (~> 1.8)
     hike (1.2.3)
     httparty (0.11.0)
       multi_json (~> 1.0)
@@ -106,8 +94,6 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     kgio (2.8.1)
-    launchy (2.4.3)
-      addressable (~> 2.3)
     log_buddy (0.6.0)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -115,7 +101,6 @@ GEM
     mime-types (1.25.1)
     multi_json (1.11.1)
     multi_xml (0.5.5)
-    netrc (0.10.3)
     nokogiri (1.5.11)
     parser (2.3.3.1)
       ast (~> 2.2)
@@ -173,7 +158,6 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.1)
-    rubyzip (1.1.7)
     sass (3.2.13)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -233,7 +217,6 @@ DEPENDENCIES
   guard-spork (~> 0.4.1)
   haml (~> 3.1.4)
   haml-rails (~> 0.3.4)
-  heroku
   httparty (~> 0.11.0)
   icalendar
   jquery-rails
@@ -259,4 +242,4 @@ RUBY VERSION
    ruby 2.1.3p242
 
 BUNDLED WITH
-   1.14.3
+   1.17.3
