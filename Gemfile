@@ -25,7 +25,7 @@ gem 'dalli', '~> 1.1.4'
 
 group :test, :development do
   gem 'sqlite3'
-
+  gem 'test-unit'
   gem 'rspec-rails', '~> 2.8.0'
   gem 'factory_girl_rails', '~> 1.5.0'
   gem 'log_buddy', '~> 0.6.0'
