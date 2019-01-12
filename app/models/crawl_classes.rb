@@ -1,11 +1,13 @@
 require 'icalendar/tzinfo'
 
 class CrawlClasses
-  SCHEDULE_URL="https://www.sunstonefit.com/class-finder"
+  START_DT=Time.now.strftime("%Y-%m-%d")
+  END_DT=1.month.from_now.strftime("%Y-%m-%d")
+  SCHEDULE_URL="https://www.sunstonefit.com/DesktopModules/XModPro/Feed.aspx?PortalId=0&xfd=FX_ClassFinder&studioid=All&type=All&pid=0&userId=-1&start=#{START_DT}&end=#{END_DT}&_=1547314453200"
 
   def perform
-    studios_with_classes.each do |url, classes|
-      if studio = Studio.find_by_studio_url(url)
+    studios_with_classes.each do |slug, classes|
+      if studio = Studio.where("studio_url LIKE ?", ["%",slug.downcase].join).first
         studio.clear_calendar
         studio.calendar = calendar_for(studio, classes).to_ical
       end
@@ -33,30 +35,19 @@ class CrawlClasses
   end
 
   def studios_with_classes
-    body = HTTParty.get(SCHEDULE_URL)
-
-    doc = Nokogiri::HTML(body)
+    schedule = HTTParty.get(SCHEDULE_URL).as_json
 
     results = Hash.new { |h, k| h[k] = [] }
 
-    doc.css('table.mGrid').each do |table|
-      day = nil
-      table.css('tr').each do |tr|
-        if th = tr.at_css('th.grid-col-date')
-          day = th.content.strip
-        else
-          dt = tr.at_css('span.hc_date').content.strip
-          url = tr.at_css('span.location > a')['href']
-
-          results[url] << {
-            name: tr.at_css('span.location').content.strip,
-            klass: tr.at_css('span.classname').content.strip.gsub(/1 - T\d\d /, ""),
-            studio_code: url.split("/").last.upcase,
-            t_start: fix_date(day, dt.split(" - ").first),
-            t_end: fix_date(day, dt.split(" - ").last),
-          }
-        end
-      end
+    schedule.each do |entry|
+      klass, room, teacher, studio = entry["title"].split(/ *[:()] */)
+      results[studio] << {
+        name: teacher,
+        klass: klass,
+        studio_code: studio,
+        t_start: Time.parse(entry["start"]),
+        t_end: Time.parse(entry["end"]),
+      }
     end
 
     results
