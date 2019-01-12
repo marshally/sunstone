@@ -30,6 +30,7 @@ group :test, :development do
   gem 'factory_girl_rails', '~> 1.5.0'
   gem 'log_buddy', '~> 0.6.0'
   gem 'rubocop'
+  gem 'rspec_junit_formatter'
 end
 
 group :development do
