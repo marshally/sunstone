@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.3'
+ruby '2.2.10'
 
 gem 'rails', '~> 3.2.0'
 
@@ -25,11 +25,12 @@ gem 'dalli', '~> 1.1.4'
 
 group :test, :development do
   gem 'sqlite3'
-
+  gem 'test-unit'
   gem 'rspec-rails', '~> 2.8.0'
   gem 'factory_girl_rails', '~> 1.5.0'
   gem 'log_buddy', '~> 0.6.0'
   gem 'rubocop'
+  gem 'rspec_junit_formatter'
 end
 
 group :development do
@@ -39,7 +40,7 @@ group :development do
   gem 'guard-spork', '~> 0.4.1'
   gem 'guard-rspec', '~> 0.5.10'
   gem 'guard-pow', '~> 0.2.1'
-  gem 'heroku'
+  # gem 'heroku'
   gem 'taps'
   gem 'growl', '~> 1.0.3'
 end

@@ -10,7 +10,7 @@ describe CrawlStudios do
     end
 
     it "creates studios" do
-      Studio.count.should == 16
+      Studio.count.should == 15
     end
 
     it "parses names" do
@@ -21,6 +21,11 @@ describe CrawlStudios do
     it "parses addresses" do
       s = Studio.find_by_slug("north_hills_center")
       s.address.include?("10710 Research Blvd, #326").should == true
+    end
+
+    it "each studio address should be unique" do
+      addresses = Studio.all.map(&:address)
+      addresses.should eq(addresses.uniq)
     end
 
     it "massages URLs" do
