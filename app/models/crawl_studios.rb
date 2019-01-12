@@ -23,7 +23,7 @@ class CrawlStudios
   end
 
   def studio_for(anchor)
-    anchor.parent.parent.parent
+    anchor.parent.parent
   end
 
   def href_from(anchor)
@@ -47,7 +47,7 @@ class CrawlStudios
   end
 
   def location_of(studio)
-    location = studio.at("//span[@itemprop='streetAddress']").parent.content
+    location = studio.at_css("[itemprop='address']").text
     pieces = location.strip.gsub(/\t/, "").gsub(/\r/, "").gsub(/\n\s+/, "\n").split("\n")
     pieces.pop
     pieces.join("\n").titleize

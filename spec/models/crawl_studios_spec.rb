@@ -23,6 +23,11 @@ describe CrawlStudios do
       s.address.include?("10710 Research Blvd, #326").should == true
     end
 
+    it "each studio address should be unique" do
+      addresses = Studio.all.map(&:address)
+      addresses.should eq(addresses.uniq)
+    end
+
     it "massages URLs" do
       s = Studio.find_by_slug("north_hills_center")
       s.studio_url.should == "https://www.sunstonefit.com/nhc"
