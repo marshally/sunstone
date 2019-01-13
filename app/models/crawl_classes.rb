@@ -1,10 +1,6 @@
 require 'icalendar/tzinfo'
 
 class CrawlClasses
-  START_DT=Time.now.strftime("%Y-%m-%d")
-  END_DT=1.month.from_now.strftime("%Y-%m-%d")
-  SCHEDULE_URL="https://www.sunstonefit.com/DesktopModules/XModPro/Feed.aspx?PortalId=0&xfd=FX_ClassFinder&studioid=All&type=All&pid=0&userId=-1&start=#{START_DT}&end=#{END_DT}&_=1547314453200"
-
   def perform
     studios_with_classes.each do |slug, classes|
       if studio = Studio.where("studio_url LIKE ?", ["%",slug.downcase].join).first
@@ -16,6 +12,18 @@ class CrawlClasses
   end
 
   private
+
+  def schedule_url
+    "https://www.sunstonefit.com/DesktopModules/XModPro/Feed.aspx?PortalId=0&xfd=FX_ClassFinder&studioid=All&type=All&pid=0&userId=-1&start=#{start_dt}&end=#{end_dt}&_=1547314453200"
+  end
+
+  def start_dt
+    Time.now.strftime("%Y-%m-%d")
+  end
+
+  def end_dt
+    1.month.from_now.strftime("%Y-%m-%d")
+  end
 
   def calendar_for(studio, classes)
     Icalendar::Calendar.new.tap do |cal|
@@ -36,7 +44,7 @@ class CrawlClasses
   end
 
   def studios_with_classes
-    schedule = HTTParty.get(SCHEDULE_URL).as_json
+    schedule = HTTParty.get(schedule_url).as_json
 
     results = Hash.new { |h, k| h[k] = [] }
 

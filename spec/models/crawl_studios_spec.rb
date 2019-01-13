@@ -3,6 +3,7 @@ require 'spec_helper'
 describe CrawlStudios do
   describe "#perform" do
     before :each do
+      $stdout.stub(:write)
       Rails.cache.clear
       VCR.use_cassette('studio/locations') do
         CrawlStudios.new.perform
