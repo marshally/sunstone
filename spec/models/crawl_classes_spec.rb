@@ -14,8 +14,12 @@ describe CrawlClasses do
       end
     end
 
+    after do
+      Timecop.return
+    end
+
     it "works" do
-      calendar.split("\n").count.should == 1273
+      calendar.split("\n").count.should == 1669
     end
 
     it "has a ICS header" do
@@ -25,7 +29,7 @@ describe CrawlClasses do
     end
 
     it "parses classes" do
-      classes.count.should == 140
+      classes.count.should == 184
     end
 
     it "parses class names" do
@@ -33,11 +37,11 @@ describe CrawlClasses do
     end
 
     it "parses class start times" do
-      first_class.should include("DTSTART:20190112T153000")
+      first_class.should include("DTSTART:20190105T153000")
     end
 
     it "parses class end times" do
-      first_class.should include("DTEND:20190112T170000")
+      first_class.should include("DTEND:20190105T170000")
     end
 
     private
