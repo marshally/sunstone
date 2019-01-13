@@ -6,7 +6,7 @@ gem 'rails', '~> 3.2.0'
 gem 'haml', '~> 3.1.4'
 gem 'haml-rails', '~> 0.3.4'
 gem "formtastic", "~> 2.2"
-gem 'nokogiri', '~> 1.5.0'
+gem 'nokogiri', '~> 1.8.0'
 gem 'icalendar'
 gem 'httparty', '~> 0.11.0'
 
