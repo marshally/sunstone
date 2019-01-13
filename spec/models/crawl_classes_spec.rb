@@ -3,6 +3,7 @@ require 'spec_helper'
 describe CrawlClasses do
   describe "#perform" do
     before :each do
+      $stdout.stub(:write)
       Rails.cache.clear
       VCR.use_cassette('studio/classes') do
         CrawlStudios.new.perform
