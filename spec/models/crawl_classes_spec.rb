@@ -4,6 +4,9 @@ describe CrawlClasses do
   describe "#perform" do
     before :each do
       $stdout.stub(:write)
+      # 12 Jan 2019 20:44:42 GMT
+      t = Time.local(2019, 01, 12, 16, 5, 0)
+      Timecop.travel(t)
       Rails.cache.clear
       VCR.use_cassette('studio/classes') do
         CrawlStudios.new.perform
