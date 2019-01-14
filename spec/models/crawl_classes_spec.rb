@@ -14,6 +14,10 @@ describe CrawlClasses do
       end
     end
 
+    after :each do
+      Timecop.return
+    end
+
     it "works" do
       calendar.split("\n").count.should == 1273
     end
