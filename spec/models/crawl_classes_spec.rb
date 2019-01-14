@@ -37,11 +37,11 @@ describe CrawlClasses do
     end
 
     it "parses class start times" do
-      first_class.should include("DTSTART:20190105T153000")
+      first_class.should include("DTSTART:20190105T093000")
     end
 
     it "parses class end times" do
-      first_class.should include("DTEND:20190105T170000")
+      first_class.should include("DTEND:20190105T110000")
     end
 
     private
