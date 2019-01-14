@@ -9,23 +9,23 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120116190738) do
+ActiveRecord::Schema.define(version: 20120116190738) do
 
-  create_table "studios", :force => true do |t|
+  create_table "studios", force: true do |t|
     t.string   "name"
     t.string   "address"
     t.float    "lat"
     t.float    "lng"
     t.string   "photo_url"
     t.string   "studio_url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "slug"
   end
 
-  add_index "studios", ["name"], :name => "index_studios_on_name", :unique => true
-  add_index "studios", ["studio_url"], :name => "index_studios_on_studio_url", :unique => true
+  add_index "studios", ["name"], name: "index_studios_on_name", unique: true
+  add_index "studios", ["studio_url"], name: "index_studios_on_studio_url", unique: true
 
 end
