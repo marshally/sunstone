@@ -54,8 +54,8 @@ class CrawlClasses
         name: teacher,
         klass: klass,
         studio_code: studio,
-        t_start: Time.parse(entry["start"]),
-        t_end: Time.parse(entry["end"]),
+        t_start: Time.parse(entry["start"]).in_time_zone("America/Chicago"),
+        t_end: Time.parse(entry["end"]).in_time_zone("America/Chicago"),
       }
     end
 
