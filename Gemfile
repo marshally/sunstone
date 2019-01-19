@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.10'
 
 gem 'rails', '~> 3.2.0'
+gem 'rake', '< 11.0'
 
 gem 'haml', '~> 3.1.4'
 gem 'haml-rails', '~> 0.3.4'
