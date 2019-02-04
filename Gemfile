@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.2.10'
 
-gem 'rails', '~> 3.2.0'
+gem 'rails', '~> 4.0.0'
 gem 'rake', '< 11.0'
 
 gem 'nokogiri', '~> 1.8.0'
@@ -22,8 +22,8 @@ gem 'dalli', '~> 1.1.4'
 group :test, :development do
   gem 'sqlite3'
   gem 'test-unit'
-  gem 'rspec-rails', '~> 2.8.0'
-  gem 'factory_girl_rails', '~> 1.5.0'
+  gem 'rspec-rails', '~> 2.12.0'
+  gem 'factory_girl_rails', '~> 4.9.0'
   gem 'log_buddy', '~> 0.6.0'
   gem 'rubocop'
   gem 'rspec_junit_formatter'
@@ -39,7 +39,7 @@ group :test do
   gem 'turn', '~> 0.8.3', require: false
   gem 'timecop', '~> 0.3.5'
   gem 'fakeweb', '~> 1.3.0'
-  gem 'rspec', '~> 2.8.0'
+  gem 'rspec', '~> 2.12.0'
   gem 'spork', '~> 0.9.0'
   gem 'vcr', '~> 2.4.0'
 end
