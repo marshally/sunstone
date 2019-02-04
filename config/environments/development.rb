@@ -17,4 +17,5 @@ SunstoneCal::Application.configure do
 
   config.cache_store = :dalli_store
 
+  config.eager_load = false
 end
