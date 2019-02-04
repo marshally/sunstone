@@ -7,7 +7,7 @@ class CrawlStudios
       puts "found studio #{anchor["href"]}"
       studio = studio_for(anchor)
       Studio
-        .find_or_create_by_name_and_studio_url(
+        .find_or_create_by(
           name: name_of(studio),
           studio_url: href_from(anchor))
         .update_attributes(
