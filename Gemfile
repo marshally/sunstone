@@ -31,7 +31,6 @@ end
 
 group :development do
   gem 'powder', '~> 0.1.7'
-  gem 'taps'
   gem 'growl', '~> 1.0.3'
 end
 
