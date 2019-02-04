@@ -10,6 +10,8 @@ describe CrawlClasses do
       Rails.cache.clear
       VCR.use_cassette('studio/classes') do
         CrawlStudios.new.perform
+        subject.stub(:start_dt) { "2019-01-05" }
+        subject.stub(:end_dt) { "2019-02-12" }
         subject.perform
       end
     end

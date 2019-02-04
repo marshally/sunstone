@@ -18,7 +18,7 @@ class CrawlClasses
   end
 
   def start_dt
-    1.week.ago.strftime("%Y-%m-%d")
+    1.day.ago.strftime("%Y-%m-%d")
   end
 
   def end_dt
