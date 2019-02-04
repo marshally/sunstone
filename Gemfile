@@ -23,7 +23,7 @@ group :test, :development do
   gem 'sqlite3'
   gem 'test-unit'
   gem 'rspec-rails', '~> 2.12.0'
-  gem 'factory_girl_rails', '~> 4.9.0'
+  gem 'factory_bot_rails', '~> 4.11.0'
   gem 'log_buddy', '~> 0.6.0'
   gem 'rubocop'
   gem 'rspec_junit_formatter'

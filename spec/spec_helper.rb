@@ -25,5 +25,5 @@ end
 
 Spork.each_run do
   SunstoneCal::Application.reload_routes!
-  FactoryGirl.reload
+  FactoryBot.reload
 end
