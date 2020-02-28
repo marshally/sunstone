@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.10'
 
 gem 'rails', '~> 4.2.0'
-gem 'rake', '< 11.0'
+gem 'rake', '< 13.0'
 
 gem 'nokogiri', '~> 1.8.0'
 gem 'icalendar'
